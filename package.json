@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-kensho",
+  "version": "0.0.0",
+  "description": "Standard Kensho config to lint JS files.",
+  "main": "index.js",
+  "author": "Billy Janitsch <billyjanitsch@gmail.com> (http://billyjanitsch.com)",
+  "license": "MIT",
+  "repository": "kensho/eslint-config-kensho",
+  "scripts": {
+    "test": "ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "eslint": "^3.10.2"
+  }
+}
