@@ -1,5 +1,7 @@
 # eslint-config-kensho
 
+[![CircleCI](https://circleci.com/gh/kensho/eslint-config-kensho.svg?style=svg)](https://circleci.com/gh/kensho/eslint-config-kensho)
+
 This [eslint config](http://eslint.org/docs/developer-guide/shareable-configs) extends [Airbnb's config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) (based on their [style guide](https://github.com/airbnb/javascript)).
 
 Since the upstream config is well-maintained and justified, we try to stick as close to it as possible. All divergences are [annotated](index.js), and tend towards increased ES2016+ support and compatibility with our infrastructure rather than stylistic preferences.
