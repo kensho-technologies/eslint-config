@@ -65,6 +65,9 @@ module.exports = {
     // do not require a React import to use JSX (it's included automatically in our Babel preset)
     'react/react-in-jsx-scope': 0,
 
+    // do not require default props for optional props
+    'react/require-default-props': 0,
+
     // disallow semicolons
     'semi': [2, 'never'],
 
