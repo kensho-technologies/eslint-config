@@ -19,7 +19,7 @@ module.exports = {
     // ensure that default, named, and namespaced imports have been exported by the target file
     'import/default': 2,
     'import/named': 2,
-    'import/namespace': 2,
+    'import/namespace': [2, {allowComputed: true}],
 
     // require all module imports to be declared as (dev-)dependencies in package.json
     'import/no-extraneous-dependencies': [2, {devDependencies: true}],
