@@ -1,6 +1,6 @@
 import {PropTypes} from 'react' // eslint-disable-line
 
-const MyComponent = props =>
+const MyComponent = props => (
   <div>
     {props.optionalProp}
     {props.optionalPropWithDefault}
@@ -8,6 +8,7 @@ const MyComponent = props =>
     {props.requiredPropWithDefault}
     {props.unspecifiedProp}
   </div>
+)
 
 MyComponent.propTypes = {
   optionalProp: PropTypes.string,
