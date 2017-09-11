@@ -1,4 +1,4 @@
-export const a = process.env.NODE_ENV === 'development' ? // ? ending line
+export const a = process.env.NODE_ENV === 'development' ?
   10 : // : ending line
   20
 
