@@ -1,18 +1,12 @@
 module.exports = {
-  extends: 'airbnb',
-  plugins: ['babel'],
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  plugins: ['babel', 'prettier'],
   parser: 'babel-eslint',
   env: {
     // allow browser globals
     browser: true,
   },
   rules: {
-    // allow parens around arrow functions only when necessary (0 or >=2 args)
-    'arrow-parens': [2, 'as-needed'],
-
-    // require trailing commas in all contexts except function calls
-    'comma-dangle': [2, 'always-multiline'],
-
     // allow require() calls
     'global-require': 0,
 
@@ -33,17 +27,8 @@ module.exports = {
     // allow non-ID-linked <label>s to accomodate those containing linked <input>s
     'jsx-a11y/label-has-for': 0,
 
-    // require single quotes in JSX
-    'jsx-quotes': [2, 'prefer-single'],
-
-    // require multi-line operators to occur at the start of the line, except && and ||
-    'operator-linebreak': [2, 'before', {overrides: {'&&': 'after', '||': 'after'}}],
-
     // allow supposedly-confusing arrows
     'no-confusing-arrow': 0,
-
-    // do not allow more than one empty line anywhere
-    'no-multiple-empty-lines': [2, {max: 1, maxEOF: 1}],
 
     // disallow confusing global browser variables
     'no-restricted-globals': ['error', 'event', 'find'],
@@ -55,9 +40,16 @@ module.exports = {
     // allow dangling underscores in variable names (for "private" class methods)
     'no-underscore-dangle': 0,
 
-    // disallow spaces in between curly braces
-    'babel/object-curly-spacing': [2, 'never'],
-    'object-curly-spacing': 0,
+    // allow event listeners on static elements (e.g. onClick on divs)
+    'jsx-a11y/no-static-element-interactions': 0,
+
+    'prettier/prettier': [2, {
+      printWidth: 100,
+      semi: false,
+      singleQuote: true,
+      trailingComma: 'all',
+      bracketSpacing: false,
+    }],
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
@@ -68,20 +60,8 @@ module.exports = {
     // do not require default props for optional props
     'react/require-default-props': 0,
 
-    // disallow semicolons
-    'semi': [2, 'never'],
-
-    // don't enforce JSX indentation, due to bugginess of the linter implementation :(
-    // TODO: https://github.com/yannickcr/eslint-plugin-react/issues/540
-    'react/jsx-indent': 0,
-    'react/jsx-indent-props': 0,
-    'react/jsx-closing-bracket-location': 0,
-
     // TODO: enable when less buggy
     'react/no-unused-prop-types': 0,
-
-    // allow event listeners on static elements (e.g. onClick on divs)
-    'jsx-a11y/no-static-element-interactions': 0,
   },
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
