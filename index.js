@@ -48,7 +48,6 @@ module.exports = {
       semi: false,
       singleQuote: true,
       trailingComma: 'es5',
-      bracketSpacing: false,
     }],
 
     // disallow .jsx files for consistency
