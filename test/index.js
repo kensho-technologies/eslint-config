@@ -12,9 +12,6 @@ const invalid = async (t, input, count = 1) => {
 
 invalid.title = provided => `correctly lints issues with ${provided}`
 
-test('operator placement', invalid, 'operator', 4)
-test('line breaks', invalid, 'linebreaks')
 test('imports', invalid, 'import', 3)
 test('missing propTypes', invalid, 'prop-types')
-test('variables', invalid, 'variables', 5)
-test('commas', invalid, 'commas', 2)
+test('variables', invalid, 'variables', 4)

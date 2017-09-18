@@ -1,10 +1,13 @@
-export const globalA = find([]) // confusing global var
-export const globalB = implicitGlobal() // implicit global var
+// confusing global variable
+export const globalA = find([])
 
-const unusedA = 1 // unused
+// implicit global variable
+export const globalB = implicitGlobal()
 
-export const functionA = (a) => a // unnecessary parens
+// unused variable
+const unusedA = 1
 
-export const functionB = a => { // unnecessary block
+// unnecessary body style
+export const functionB = a => {
   return a
 }
