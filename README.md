@@ -11,15 +11,13 @@ Since the upstream config is well-maintained and justified, we try to stick as c
 To add JS linting to a project, first install eslint and this config as development dependencies:
 
 ```sh
-$ npm i -D eslint eslint-config-kensho
+$ npm i -D eslint prettier eslint-config-kensho
 ```
 
-Add a [**.eslintrc.json**](http://eslint.org/docs/user-guide/configuring) which extends the config:
+Add a [**.eslintrc.yml**](http://eslint.org/docs/user-guide/configuring) which extends the config:
 
-```json
-{
-  "extends": "kensho"
-}
+```yml
+extends: kensho
 ```
 
 Add a script in **package.json** to [run the linter](http://eslint.org/docs/user-guide/command-line-interface). Example:
