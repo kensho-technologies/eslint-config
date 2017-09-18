@@ -19,11 +19,11 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.2.0",
-    "eslint-plugin-react": "^7.3.0",
-    "prettier": "^1.7.0"
+    "eslint-plugin-react": "^7.3.0"
   },
   "devDependencies": {
     "ava": "^0.22.0",
-    "eslint": "^4.7.0"
+    "eslint": "^4.7.0",
+    "prettier": "^1.7.0"
   }
 }
