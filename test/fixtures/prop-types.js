@@ -19,7 +19,6 @@ MyComponent.propTypes = {
 
 MyComponent.defaultProps = {
   optionalPropWithDefault: 'a',
-  requiredPropWithDefault: 'b',
 }
 
 export default MyComponent
