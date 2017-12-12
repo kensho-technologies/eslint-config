@@ -51,6 +51,10 @@ module.exports = {
       aspects: ['noHref', 'invalidHref', 'preferButton'],
     }],
 
+    // enforce line len in situations where prettier cannot (should have same value as printWidth)
+    // see https://github.com/prettier/eslint-config-prettier#max-len
+    'max-len': [2, 100],
+
     'prettier/prettier': [2, {
       printWidth: 100,
       semi: false,

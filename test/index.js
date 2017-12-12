@@ -14,4 +14,4 @@ invalid.title = provided => `correctly lints issues with ${provided}`
 
 test('imports', invalid, 'import', 3)
 test('missing propTypes', invalid, 'prop-types')
-test('variables', invalid, 'variables', 4)
+test('variables', invalid, 'variables', 5)
