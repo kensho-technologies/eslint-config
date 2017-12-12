@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kensho",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Standard Kensho config to lint JS files.",
   "main": "index.js",
   "author": "Billy Janitsch <billyjanitsch@gmail.com> (http://billyjanitsch.com)",
