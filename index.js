@@ -43,6 +43,14 @@ module.exports = {
     // allow event listeners on static elements (e.g. onClick on divs)
     'jsx-a11y/no-static-element-interactions': 0,
 
+    // allow react-router's <Link to> as a valid href
+    // TODO: remove when https://github.com/airbnb/javascript/pull/1648 is released
+    'jsx-a11y/anchor-is-valid': [2, {
+      components: ['Link'],
+      specialLink: ['to'],
+      aspects: ['noHref', 'invalidHref', 'preferButton'],
+    }],
+
     'prettier/prettier': [2, {
       printWidth: 100,
       semi: false,
