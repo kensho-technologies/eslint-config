@@ -45,25 +45,28 @@ module.exports = {
 
     // allow react-router's <Link to> as a valid href
     // TODO: remove when https://github.com/airbnb/javascript/pull/1648 is released
-    'jsx-a11y/anchor-is-valid': [2, {
-      components: ['Link'],
-      specialLink: ['to'],
-      aspects: ['noHref', 'invalidHref', 'preferButton'],
-    }],
+    'jsx-a11y/anchor-is-valid': [
+      2,
+      {
+        components: ['Link'],
+        specialLink: ['to'],
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
+      },
+    ],
 
-    'prettier/prettier': [2, {
-      printWidth: 100,
-      semi: false,
-      singleQuote: true,
-      trailingComma: 'es5',
-      bracketSpacing: false,
-    }],
+    'prettier/prettier': [
+      2,
+      {
+        printWidth: 100,
+        semi: false,
+        singleQuote: true,
+        trailingComma: 'es5',
+        bracketSpacing: false,
+      },
+    ],
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
-
-    // do not require a React import to use JSX (it's included automatically in our Babel preset)
-    'react/react-in-jsx-scope': 0,
 
     // do not require default props for optional props
     'react/require-default-props': 0,
@@ -73,12 +76,7 @@ module.exports = {
   },
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
-    'import/ignore': [
-      'node_modules',
-      '\.(png|svg|jpg|css|pdf)$'
-    ],
-    'import/extensions': [
-      '.js'
-    ],
+    'import/ignore': ['node_modules', '.(png|svg|jpg|css|pdf)$'],
+    'import/extensions': ['.js'],
   },
 }
