@@ -1,4 +1,5 @@
-import {PropTypes} from 'react' // eslint-disable-line
+import PropTypes from 'prop-types' // eslint-disable-line
+import * as React from 'react' // eslint-disable-line
 
 const MyComponent = props => (
   <div>

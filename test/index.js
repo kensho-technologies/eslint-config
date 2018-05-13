@@ -4,7 +4,7 @@ import {CLIEngine} from 'eslint'
 const cli = new CLIEngine()
 const formatter = cli.getFormatter()
 
-const invalid = async (t, input, count = 1) => {
+async function invalid(t, input, count = 1) {
   const result = await cli.executeOnFiles([`${__dirname}/fixtures/${input}.js`])
   t.is(result.errorCount, count, formatter(result.results))
   t.is(result.warningCount, 0, formatter(result.results))
