@@ -68,5 +68,6 @@ module.exports = {
     // do not attempt to parse npm modules or non-JS files for exports
     'import/ignore': ['node_modules', '.(png|svg|jpg|css|pdf)$'],
     'import/extensions': ['.js'],
+    react: {version: '16.3.2'},
   },
 }
