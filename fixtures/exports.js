@@ -1,3 +1,3 @@
-export const foo = 5
-// does not export bar
-export default 6
+export const foo = 'foo'
+export const bar = 'bar'
+export default 'default'

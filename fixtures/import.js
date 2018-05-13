@@ -1,4 +1,5 @@
-import x, {foo, bar} from './exports' // bar is not exported
-import baz from './nonexistent' // file does not exist
+import something, {foo, baz} from './exports' // baz is not exported
+import somethingElse from './nonexistent' // file does not exist
 
-export {foo, bar, baz, x}
+export {foo, baz, something, somethingElse}
+export {bar} from '../fixtures/exports'
