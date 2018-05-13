@@ -38,31 +38,43 @@ module.exports = {
 
     // allow react-router's <Link to> as a valid href
     // TODO: remove when https://github.com/airbnb/javascript/pull/1648 is released
-    'jsx-a11y/anchor-is-valid': [
-      2,
-      {
-        components: ['Link'],
-        specialLink: ['to'],
-        aspects: ['noHref', 'invalidHref', 'preferButton'],
-      },
-    ],
+    'jsx-a11y/anchor-is-valid': [2, {
+      components: ['Link'],
+      specialLink: ['to'],
+      aspects: ['noHref', 'invalidHref', 'preferButton'],
+    }],
 
-    'prettier/prettier': [
-      2,
-      {
-        printWidth: 100,
-        semi: false,
-        singleQuote: true,
-        trailingComma: 'es5',
-        bracketSpacing: false,
-      },
-    ],
+    'prettier/prettier': [2, {
+      printWidth: 100,
+      semi: false,
+      singleQuote: true,
+      trailingComma: 'es5',
+      bracketSpacing: false,
+    }],
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
 
     // do not require default props for optional props
     'react/require-default-props': 0,
+
+    'react/sort-comp': [2, {
+      order: [
+        'static-methods',
+        'instance-variables',
+        'lifecycle',
+        '/^(on|handle).+$/',
+        'getters',
+        'setters',
+        '/^(get|set).+$/',
+        'instance-methods',
+        'everything-else',
+        'rendering',
+      ],
+      groups: {
+        rendering: ['/^render.+$/', 'render']
+      },
+    }]
   },
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
