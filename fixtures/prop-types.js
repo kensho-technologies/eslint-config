@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types' // eslint-disable-line
 import * as React from 'react' // eslint-disable-line
 
-const MyComponent = props => (
-  <div>
-    {props.optionalProp}
-    {props.optionalPropWithDefault}
-    {props.requiredProp}
-    {props.requiredPropWithDefault}
-    {props.unspecifiedProp}
-  </div>
-)
+export default function MyComponent(props) {
+  return (
+    <div>
+      {props.optionalProp}
+      {props.optionalPropWithDefault}
+      {props.requiredProp}
+      {props.requiredPropWithDefault}
+      {props.propWithoutPropType /* should be typed */}
+    </div>
+  )
+}
 
 MyComponent.propTypes = {
   optionalProp: PropTypes.string,
@@ -20,6 +22,5 @@ MyComponent.propTypes = {
 
 MyComponent.defaultProps = {
   optionalPropWithDefault: 'a',
+  requiredPropWithDefault: 'b', // does not need a default
 }
-
-export default MyComponent
