@@ -60,9 +60,6 @@ module.exports = {
 
     // do not require default props for optional props
     'react/require-default-props': 0,
-
-    // TODO: enable when less buggy
-    'react/no-unused-prop-types': 0,
   },
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports

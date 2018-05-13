@@ -18,6 +18,7 @@ MyComponent.propTypes = {
   optionalPropWithDefault: PropTypes.string,
   requiredProp: PropTypes.string.isRequired,
   requiredPropWithDefault: PropTypes.string.isRequired,
+  unusedProp: PropTypes.string,
 }
 
 MyComponent.defaultProps = {
