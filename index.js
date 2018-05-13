@@ -37,9 +37,6 @@ module.exports = {
     // TODO: enable?
     'no-shadow': 0,
 
-    // allow dangling underscores in variable names (for "private" class methods)
-    'no-underscore-dangle': 0,
-
     // allow event listeners on static elements (e.g. onClick on divs)
     'jsx-a11y/no-static-element-interactions': 0,
 
