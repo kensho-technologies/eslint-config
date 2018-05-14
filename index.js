@@ -55,6 +55,9 @@ module.exports = {
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
 
+    // disallow accessing `this.state` inside of `setState`
+    'react/no-access-state-in-setstate': 2,
+
     // do not require default props for optional props
     'react/require-default-props': 0,
 
