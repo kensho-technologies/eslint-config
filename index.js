@@ -61,6 +61,9 @@ module.exports = {
     // disallow accessing `this.state` inside of `setState`
     'react/no-access-state-in-setstate': 2,
 
+    // allow `setState` in `componentDidMount`
+    'react/no-did-mount-set-state': 0,
+
     // do not require default props for optional props
     'react/require-default-props': 0,
 
