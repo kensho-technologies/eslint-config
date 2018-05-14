@@ -27,6 +27,9 @@ module.exports = {
     // allow non-ID-linked <label>s to accomodate those containing linked <input>s
     'jsx-a11y/label-has-for': 0,
 
+    // require a line break between class members
+    'lines-between-class-members': 2,
+
     // allow supposedly-confusing arrows
     'no-confusing-arrow': 0,
 
