@@ -16,14 +16,14 @@
     "babel-eslint": "^8.2.3",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
-    "eslint-plugin-react": "^7.8.2"
+    "eslint-plugin-react": "^7.9.1"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "1.0.0-beta.6",
     "eslint": "^4.19.1",
-    "prettier": "^1.12.1"
+    "prettier": "^1.13.5"
   }
 }
