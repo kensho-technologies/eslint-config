@@ -34,7 +34,8 @@ export default class MyComponent extends React.Component {
   }
 
   componentDidMount() {
-    this.props.func('mounted')
+    const {func} = this.props
+    func('mounted')
   }
 
   handleMouseEnter = event => {
@@ -46,19 +47,24 @@ export default class MyComponent extends React.Component {
   }
 
   getSomething() {
-    return this.props.number + this.instanceVariable
+    const {number} = this.props
+    return number + this.instanceVariable
   }
 
   doSomething = () => {
-    this.props.func(this.state.stateA)
+    const {func} = this.props
+    const {stateA} = this.state
+    func(stateA)
   }
 
   renderSomething() {
-    return <span>{this.props.string}</span>
+    const {string} = this.props
+    return <span>{string}</span>
   }
 
   renderSomethingElse() {
-    return <span>{this.props.number}</span>
+    const {number} = this.props
+    return <span>{number}</span>
   }
 
   render() {
