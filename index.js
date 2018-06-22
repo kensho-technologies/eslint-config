@@ -17,13 +17,6 @@ module.exports = {
     // require import groups to be ordered by specificity and separated by linebreaks
     'import/order': [2, {'newlines-between': 'always'}],
 
-    // ensure consistent use of file extension within the import path
-    'import/extensions': ['error', 'always', {
-      js: 'never',
-      mjs: 'never',
-      jsx: 'never',
-    }],
-
     // allow non-ID-linked <label>s to accomodate those containing linked <input>s
     'jsx-a11y/label-has-for': 0,
 
