@@ -12,23 +12,13 @@ module.exports = {
 
     // ensure that default, named, and namespaced imports have been exported by the target file
     'import/default': 2,
-    'import/named': 2,
     'import/namespace': [2, {allowComputed: true}],
-
-    // require all module imports to be declared as (dev-)dependencies in package.json
-    'import/no-extraneous-dependencies': [2, {devDependencies: true}],
 
     // require import groups to be ordered by specificity and separated by linebreaks
     'import/order': [2, {'newlines-between': 'always'}],
 
-    // enforce conciseness in import paths
-    'import/no-useless-path-segments': 2,
-
     // allow non-ID-linked <label>s to accomodate those containing linked <input>s
     'jsx-a11y/label-has-for': 0,
-
-    // require a line break between class members
-    'lines-between-class-members': 2,
 
     // allow supposedly-confusing arrows
     'no-confusing-arrow': 0,
@@ -38,14 +28,6 @@ module.exports = {
 
     // allow event listeners on static elements (e.g. onClick on divs)
     'jsx-a11y/no-static-element-interactions': 0,
-
-    // allow react-router's <Link to> as a valid href
-    // TODO: remove when https://github.com/airbnb/javascript/pull/1648 is released
-    'jsx-a11y/anchor-is-valid': [2, {
-      components: ['Link'],
-      specialLink: ['to'],
-      aspects: ['noHref', 'invalidHref', 'preferButton'],
-    }],
 
     'prettier/prettier': [2, {
       printWidth: 100,
@@ -57,12 +39,6 @@ module.exports = {
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
-
-    // disallow accessing `this.state` inside of `setState`
-    'react/no-access-state-in-setstate': 2,
-
-    // allow `setState` in `componentDidMount`
-    'react/no-did-mount-set-state': 0,
 
     // do not require default props for optional props
     'react/require-default-props': 0,
