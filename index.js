@@ -19,6 +19,7 @@ module.exports = {
 
     // allow non-ID-linked <label>s to accomodate those containing linked <input>s
     'jsx-a11y/label-has-for': 0,
+    'jsx-a11y/label-has-associated-control': [2, {assert: 'some'}],
 
     // allow supposedly-confusing arrows
     'no-confusing-arrow': 0,
