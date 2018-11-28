@@ -19,7 +19,9 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "typescript-eslint-parser": "^21.0.1",
+    "eslint-plugin-typescript": "^0.14.0"
   },
   "devDependencies": {
     "ava": "1.0.0-beta.8",

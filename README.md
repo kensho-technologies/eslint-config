@@ -30,6 +30,24 @@ Add a script in **package.json** to [run the linter](http://eslint.org/docs/user
 }
 ```
 
+### TypeScript
+
+Have your **.eslintrc.yml** extend the TypeScript specific config:
+
+```yml
+extends: kensho/typescript
+```
+
+Make sure your **package.json** script has an `--ext` flag to include `.ts` and `.tsx` files:
+
+```json
+{
+  "scripts": {
+    "lint": "eslint src --ext ts,tsx"
+  }
+}
+```
+
 ## Caveat
 
 The eslint-plugin-X dependencies specified in [package.json](package.json) should actually be peer dependencies (see eslint/eslint#2518), and installed alongside eslint and this config. In practice, this is quite tedious, so we have instead specified them as dependencies and rely on npm@3's flattening to install them alongside the linter.
