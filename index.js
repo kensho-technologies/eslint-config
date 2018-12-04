@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'react-hooks'],
   parser: 'babel-eslint',
   env: {
     // allow browser globals
@@ -37,6 +37,9 @@ module.exports = {
       trailingComma: 'es5',
       bracketSpacing: false,
     }],
+
+    // disallow invalid uses of React hooks
+    'react-hooks/rules-of-hooks': 2,
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
