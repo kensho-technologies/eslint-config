@@ -23,7 +23,7 @@
     "eslint-plugin-react-hooks": "0.0.0"
   },
   "devDependencies": {
-    "ava": "1.0.0-rc.2",
+    "ava": "1.0.1",
     "eslint": "^5.9.0",
     "prettier": "^1.15.3"
   }
