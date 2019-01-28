@@ -7,6 +7,9 @@ module.exports = {
     browser: true,
   },
   rules: {
+    // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
+    'arrow-body-style': [2, 'as-needed', {requireReturnForObjectLiteral: false}],
+
     // allow require() calls
     'global-require': 0,
 
@@ -29,6 +32,9 @@ module.exports = {
 
     // allow event listeners on static elements (e.g. onClick on divs)
     'jsx-a11y/no-static-element-interactions': 0,
+
+    // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
+    'prefer-arrow-callback': [2, {allowNamedFunctions: false, allowUnboundThis: true}],
 
     'prettier/prettier': [2, {
       printWidth: 100,
