@@ -3,11 +3,17 @@ import path from 'path'
 import test from 'ava'
 import {CLIEngine} from 'eslint'
 
-import config from '.'
 import tsConfig from './typescript'
 
+import config from '.'
+
 async function lintFixtures(t, baseConfig, fixturesDir) {
-  const cli = new CLIEngine({useEslintrc: false, baseConfig, extensions: ['.js', '.ts', '.tsx']})
+  const cli = new CLIEngine({
+    baseConfig,
+    extensions: ['.js', '.ts', '.tsx'],
+    ignore: false,
+    useEslintrc: false,
+  })
   const formatter = cli.getFormatter()
   const {results} = await cli.executeOnFiles([fixturesDir])
   t.log(formatter(results))

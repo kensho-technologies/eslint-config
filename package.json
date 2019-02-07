@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": "kensho/eslint-config-kensho",
   "scripts": {
-    "test": "ava"
+    "test": "eslint . && ava"
   },
   "files": [
     "index.js",
