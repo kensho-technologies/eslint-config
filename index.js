@@ -36,13 +36,16 @@ module.exports = {
     // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
     'prefer-arrow-callback': [2, {allowNamedFunctions: false, allowUnboundThis: true}],
 
-    'prettier/prettier': [2, {
-      printWidth: 100,
-      semi: false,
-      singleQuote: true,
-      trailingComma: 'es5',
-      bracketSpacing: false,
-    }],
+    'prettier/prettier': [
+      2,
+      {
+        printWidth: 100,
+        semi: false,
+        singleQuote: true,
+        trailingComma: 'es5',
+        bracketSpacing: false,
+      },
+    ],
 
     // disallow invalid uses of React hooks
     'react-hooks/rules-of-hooks': 2,
@@ -53,51 +56,54 @@ module.exports = {
     // do not require default props for optional props
     'react/require-default-props': 0,
 
-    'react/sort-comp': [2, {
-      order: [
-        'lifecycle-statics',
-        'static-methods',
-        'constructor',
-        'instance-variables',
-        'lifecycle-methods',
-        '/^(on|handle).+$/',
-        '/^(get|set).+$/',
-        'everything-else',
-        'rendering',
-      ],
-      groups: {
-        'lifecycle-statics': [
-          'displayName',
-          'propTypes',
-          'contextTypes',
-          'childContextTypes',
-          'defaultProps',
+    'react/sort-comp': [
+      2,
+      {
+        order: [
+          'lifecycle-statics',
+          'static-methods',
+          'constructor',
+          'instance-variables',
+          'lifecycle-methods',
+          '/^(on|handle).+$/',
+          '/^(get|set).+$/',
+          'everything-else',
+          'rendering',
         ],
-        'lifecycle-methods': [
-          'state',
-          'getChildContext',
-          'getDerivedStateFromProps',
-          'componentWillMount',
-          'UNSAFE_componentWillMount',
-          'componentDidMount',
-          'componentWillReceiveProps',
-          'UNSAFE_componentWillReceiveProps',
-          'shouldComponentUpdate',
-          'componentWillUpdate',
-          'UNSAFE_componentWillUpdate',
-          'getSnapshotBeforeUpdate',
-          'componentDidUpdate',
-          'componentDidCatch',
-          'componentWillUnmount'
-        ],
-        rendering: ['/^render.+$/', 'render']
+        groups: {
+          'lifecycle-statics': [
+            'displayName',
+            'propTypes',
+            'contextTypes',
+            'childContextTypes',
+            'defaultProps',
+          ],
+          'lifecycle-methods': [
+            'state',
+            'getChildContext',
+            'getDerivedStateFromProps',
+            'componentWillMount',
+            'UNSAFE_componentWillMount',
+            'componentDidMount',
+            'componentWillReceiveProps',
+            'UNSAFE_componentWillReceiveProps',
+            'shouldComponentUpdate',
+            'componentWillUpdate',
+            'UNSAFE_componentWillUpdate',
+            'getSnapshotBeforeUpdate',
+            'componentDidUpdate',
+            'componentDidCatch',
+            'componentWillUnmount',
+          ],
+          rendering: ['/^render.+$/', 'render'],
+        },
       },
-    }]
+    ],
   },
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
     'import/ignore': ['node_modules', '.(png|svg|jpg|css|pdf)$'],
     'import/extensions': ['.js'],
-    react: {version: '16.3.2'},
+    react: {version: '16.8.1'},
   },
 }
