@@ -1,22 +1,20 @@
-import path from 'path'
+/* eslint-env jest */
+const path = require('path')
 
-import test from 'ava'
-import {CLIEngine} from 'eslint'
+const {CLIEngine} = require('eslint')
 
-import tsConfig from './typescript'
+const tsConfig = require('./typescript')
 
-import config from '.'
+const config = require('.')
 
-async function lintFixtures(t, baseConfig, fixturesDir) {
+async function lintFixtures(baseConfig, fixturesDir) {
   const cli = new CLIEngine({
     baseConfig,
     extensions: ['.js', '.ts', '.tsx'],
     ignore: false,
     useEslintrc: false,
   })
-  const formatter = cli.getFormatter()
   const {results} = await cli.executeOnFiles([fixturesDir])
-  t.log(formatter(results))
   results.forEach(result => {
     const basename = path.basename(result.filePath)
     const messages = result.messages.map(message => ({
@@ -26,9 +24,13 @@ async function lintFixtures(t, baseConfig, fixturesDir) {
       rule: message.ruleId,
       severity: message.severity,
     }))
-    t.snapshot(messages, basename)
+    expect(messages).toMatchSnapshot(basename)
   })
 }
 
-test('lints all JS fixtures', lintFixtures, config, `${__dirname}/fixtures/js`)
-test('lints all TS fixtures', lintFixtures, tsConfig, `${__dirname}/fixtures/ts`)
+test.each([
+  ['JS', config, `${__dirname}/fixtures/js`],
+  ['TS', tsConfig, `${__dirname}/fixtures/ts`],
+])('lints all %s fixtures', (name, lintConfig, dir) => {
+  lintFixtures(lintConfig, dir)
+})
