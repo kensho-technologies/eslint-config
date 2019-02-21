@@ -50,6 +50,9 @@ module.exports = {
     // disallow invalid uses of React hooks
     'react-hooks/rules-of-hooks': 2,
 
+    // requires valid dependency arrays in React hooks
+    'react-hooks/exhaustive-deps': 2,
+
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
 
