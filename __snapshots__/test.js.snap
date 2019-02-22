@@ -153,13 +153,6 @@ Array [
     "severity": 2,
   },
   Object {
-    "column": 7,
-    "line": 3,
-    "message": "'unusedA' is assigned a value but never used.",
-    "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 2,
-  },
-  Object {
     "column": 26,
     "line": 6,
     "message": "Missing return type on function.",
