@@ -7,7 +7,8 @@
   "license": "MIT",
   "repository": "kensho/eslint-config-kensho",
   "scripts": {
-    "test": "eslint . && jest"
+    "test": "eslint . && jest",
+    "prepublishOnly": "npm test"
   },
   "files": [
     "index.js",
