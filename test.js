@@ -3,7 +3,7 @@ const path = require('path')
 
 const {CLIEngine} = require('eslint')
 
-const tsConfig = require('./typescript')
+const jsConfig = require('./javascript')
 
 const config = require('.')
 
@@ -29,8 +29,8 @@ async function lintFixtures(baseConfig, fixturesDir) {
 }
 
 test.each([
-  ['JS', config, `${__dirname}/fixtures/js`],
-  ['TS', tsConfig, `${__dirname}/fixtures/ts`],
+  ['TS', config, `${__dirname}/fixtures/ts`],
+  ['JS', jsConfig, `${__dirname}/fixtures/js`],
 ])('lints all %s fixtures', (name, lintConfig, dir) => {
   lintFixtures(lintConfig, dir)
 })
