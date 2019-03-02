@@ -1,7 +1,5 @@
 # eslint-config-kensho
 
-[![Build Status](https://travis-ci.org/kensho/eslint-config-kensho.svg?branch=master)](https://travis-ci.org/kensho/eslint-config-kensho)
-
 This [ESLint config](http://eslint.org/docs/developer-guide/shareable-configs) extends [Airbnb's config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) (based on their [style guide](https://github.com/airbnb/javascript)) to work with TypeScript.
 
 Since the upstream config is well-maintained and justified, we try to stick as close to it as possible. All divergences are [annotated](index.js), and tend towards increased ES2019 support, Prettier adoption, and TypeScript compatibility, rather than stylistic preferences.
