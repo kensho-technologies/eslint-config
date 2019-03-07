@@ -24,11 +24,11 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.4.0"
+    "eslint-plugin-react-hooks": "^1.5.0"
   },
   "devDependencies": {
-    "eslint": "^5.14.1",
-    "jest": "^24.1.0",
+    "eslint": "^5.15.1",
+    "jest": "^24.3.0",
     "prettier": "^1.16.4",
     "typescript": "^3.3.3333"
   }
