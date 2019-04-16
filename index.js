@@ -2,19 +2,9 @@ module.exports = {
   extends: [
     require.resolve('./javascript'),
     'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
     'prettier/@typescript-eslint',
   ],
-  settings: {
-    'import/extensions': ['.js', '.ts', '.tsx'],
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx'],
-    },
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.ts', '.tsx'],
-      },
-    },
-  },
   rules: {
     // upgrade severity from warning to error
     '@typescript-eslint/explicit-function-return-type': [
