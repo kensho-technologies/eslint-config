@@ -68,10 +68,8 @@ module.exports = {
           'constructor',
           'instance-variables',
           'lifecycle-methods',
-          '/^(on|handle).+$/',
-          '/^(get|set).+$/',
           'everything-else',
-          'rendering',
+          'render',
         ],
         groups: {
           'lifecycle-statics': [
@@ -98,7 +96,6 @@ module.exports = {
             'componentDidCatch',
             'componentWillUnmount',
           ],
-          rendering: ['/^render.+$/', 'render'],
         },
       },
     ],
