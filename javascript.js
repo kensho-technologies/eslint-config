@@ -21,9 +21,6 @@ module.exports = {
     'jsx-a11y/label-has-for': 0,
     'jsx-a11y/label-has-associated-control': [2, {assert: 'either'}],
 
-    // allow supposedly-confusing arrows
-    'no-confusing-arrow': 0,
-
     // allow event listeners on static elements (e.g. onClick on divs)
     'jsx-a11y/no-static-element-interactions': 0,
 
