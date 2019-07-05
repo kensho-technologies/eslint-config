@@ -10,9 +10,6 @@ module.exports = {
     // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
     'arrow-body-style': [2, 'as-needed', {requireReturnForObjectLiteral: false}],
 
-    // allow require() calls
-    'global-require': 0,
-
     // ensure that default, named, and namespaced imports have been exported by the target file
     'import/default': 2,
     'import/namespace': [2, {allowComputed: true}],
