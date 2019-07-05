@@ -27,9 +27,6 @@ module.exports = {
     // allow supposedly-confusing arrows
     'no-confusing-arrow': 0,
 
-    // disallow confusing global browser variables
-    'no-restricted-globals': ['error', 'event', 'find'],
-
     // allow event listeners on static elements (e.g. onClick on divs)
     'jsx-a11y/no-static-element-interactions': 0,
 
