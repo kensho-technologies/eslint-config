@@ -41,11 +41,14 @@ module.exports = {
     // disallow invalid uses of React hooks
     'react-hooks/rules-of-hooks': 2,
 
-    // requires valid dependency arrays in React hooks
+    // require valid dependency arrays in React hooks
     'react-hooks/exhaustive-deps': 2,
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
+
+    // allow function creation in render
+    'react/jsx-no-bind': 0,
 
     // do not require default props for optional props
     'react/require-default-props': 0,
