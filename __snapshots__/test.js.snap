@@ -94,6 +94,13 @@ exports[`lints all TS fixtures: exports.ts 1`] = `Array []`;
 exports[`lints all TS fixtures: import.ts 1`] = `
 Array [
   Object {
+    "column": 27,
+    "line": 2,
+    "message": "Unable to resolve path to module './nonexistent'.",
+    "rule": "import/no-unresolved",
+    "severity": 2,
+  },
+  Object {
     "column": 19,
     "line": 5,
     "message": "Useless path segments for \\"../ts/exports\\", should be \\"./exports\\"",
