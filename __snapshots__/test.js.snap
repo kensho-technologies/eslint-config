@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lints all JS fixtures: component.js 1`] = `Array []`;
+exports[`lints all JS fixtures: component.js 1`] = `
+Array [
+  Object {
+    "column": 7,
+    "line": 72,
+    "message": "Prefer fragment shorthand over React.Fragment",
+    "rule": "react/jsx-fragments",
+    "severity": 2,
+  },
+]
+`;
 
 exports[`lints all JS fixtures: exports.js 1`] = `Array []`;
 
