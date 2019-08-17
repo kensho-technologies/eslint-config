@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lints all fixtures: component.js 1`] = `
+exports[`lints all JS fixtures: component.js 1`] = `
 Array [
   Object {
     "column": 7,
@@ -12,11 +12,9 @@ Array [
 ]
 `;
 
-exports[`lints all fixtures: exports.js 1`] = `Array []`;
+exports[`lints all JS fixtures: exports.js 1`] = `Array []`;
 
-exports[`lints all fixtures: exports.ts 1`] = `Array []`;
-
-exports[`lints all fixtures: import.js 1`] = `
+exports[`lints all JS fixtures: import.js 1`] = `
 Array [
   Object {
     "column": 25,
@@ -32,22 +30,17 @@ Array [
     "rule": "import/no-unresolved",
     "severity": 2,
   },
-]
-`;
-
-exports[`lints all fixtures: import.ts 1`] = `
-Array [
   Object {
-    "column": 27,
-    "line": 2,
-    "message": "Unable to resolve path to module './nonexistent'.",
-    "rule": "import/no-unresolved",
+    "column": 19,
+    "line": 5,
+    "message": "Useless path segments for \\"../js/exports\\", should be \\"./exports\\"",
+    "rule": "import/no-useless-path-segments",
     "severity": 2,
   },
 ]
 `;
 
-exports[`lints all fixtures: prop-types.js 1`] = `
+exports[`lints all JS fixtures: prop-types.js 1`] = `
 Array [
   Object {
     "column": 5,
@@ -73,26 +66,7 @@ Array [
 ]
 `;
 
-exports[`lints all fixtures: prop-types.tsx 1`] = `
-Array [
-  Object {
-    "column": 16,
-    "line": 4,
-    "message": "Missing return type on function.",
-    "rule": "@typescript-eslint/explicit-function-return-type",
-    "severity": 2,
-  },
-  Object {
-    "column": 3,
-    "line": 33,
-    "message": "defaultProp \\"requiredPropWithDefault\\" defined for isRequired propType.",
-    "rule": "react/default-props-match-prop-types",
-    "severity": 2,
-  },
-]
-`;
-
-exports[`lints all fixtures: variables.js 1`] = `
+exports[`lints all JS fixtures: variables.js 1`] = `
 Array [
   Object {
     "column": 24,
@@ -125,7 +99,47 @@ Array [
 ]
 `;
 
-exports[`lints all fixtures: variables.ts 1`] = `
+exports[`lints all TS fixtures: exports.ts 1`] = `Array []`;
+
+exports[`lints all TS fixtures: import.ts 1`] = `
+Array [
+  Object {
+    "column": 27,
+    "line": 2,
+    "message": "Unable to resolve path to module './nonexistent'.",
+    "rule": "import/no-unresolved",
+    "severity": 2,
+  },
+  Object {
+    "column": 19,
+    "line": 5,
+    "message": "Useless path segments for \\"../ts/exports\\", should be \\"./exports\\"",
+    "rule": "import/no-useless-path-segments",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`lints all TS fixtures: prop-types.tsx 1`] = `
+Array [
+  Object {
+    "column": 16,
+    "line": 4,
+    "message": "Missing return type on function.",
+    "rule": "@typescript-eslint/explicit-function-return-type",
+    "severity": 2,
+  },
+  Object {
+    "column": 3,
+    "line": 33,
+    "message": "defaultProp \\"requiredPropWithDefault\\" defined for isRequired propType.",
+    "rule": "react/default-props-match-prop-types",
+    "severity": 2,
+  },
+]
+`;
+
+exports[`lints all TS fixtures: variables.ts 1`] = `
 Array [
   Object {
     "column": 24,
