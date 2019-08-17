@@ -13,6 +13,7 @@ module.exports = {
       {allowExpressions: true, allowTypedFunctionExpressions: true},
     ],
     '@typescript-eslint/no-explicit-any': 2,
+    '@typescript-eslint/no-non-null-assertion': 2,
 
     // these are checked by the TS compiler
     '@typescript-eslint/no-unused-vars': 0,
@@ -24,5 +25,11 @@ module.exports = {
     'react/no-unused-prop-types': 0,
     'react/prop-types': 0,
     'react/react-in-jsx-scope': 0,
+
+    // allow ts-ignore comments
+    '@typescript-eslint/ban-ts-ignore': 0,
+
+    // prefer T[] style of arrays
+    '@typescript-eslint/array-type': 2,
   },
 }

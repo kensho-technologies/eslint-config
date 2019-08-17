@@ -44,6 +44,9 @@ module.exports = {
     // allow function creation in render
     'react/jsx-no-bind': 0,
 
+    // allow spreading props
+    'react/jsx-props-no-spreading': 0,
+
     // do not require default props for optional props
     'react/require-default-props': 0,
 
