@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'prettier/react'],
-  plugins: ['prettier', 'react-hooks'],
+  extends: ['airbnb', 'airbnb/hooks', 'prettier', 'prettier/react'],
+  plugins: ['prettier'],
   parser: 'babel-eslint',
   env: {
     // allow browser globals
@@ -37,12 +37,6 @@ module.exports = {
         bracketSpacing: false,
       },
     ],
-
-    // disallow invalid uses of React hooks
-    'react-hooks/rules-of-hooks': 2,
-
-    // require valid dependency arrays in React hooks
-    'react-hooks/exhaustive-deps': 2,
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
@@ -93,6 +87,12 @@ module.exports = {
         },
       },
     ],
+
+    // permit both styles of state declaration
+    'react/state-in-constructor': 0,
+
+    // require statics to be declared as public fields
+    'react/static-property-placement': [2, 'static public field'],
   },
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
