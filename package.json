@@ -11,8 +11,7 @@
     "prepublishOnly": "npm test"
   },
   "files": [
-    "index.js",
-    "javascript.js"
+    "index.js"
   ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.0.0",
