@@ -55,6 +55,7 @@ module.exports = {
       {
         order: [
           'lifecycle-statics',
+          'static-variables',
           'static-methods',
           'constructor',
           'instance-variables',

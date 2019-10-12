@@ -12,11 +12,11 @@ export default class MyComponent extends React.Component {
     string: 'foo',
   }
 
+  static staticProperty = 'bar'
+
   static staticMethod() {
     return 'foo'
   }
-
-  static staticProperty = 'bar'
 
   constructor(props) {
     super(props)
