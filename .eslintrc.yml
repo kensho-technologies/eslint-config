@@ -1,1 +1,1 @@
-extends: './javascript.js'
+extends: '.'

@@ -3,18 +3,16 @@ const path = require('path')
 
 const {CLIEngine} = require('eslint')
 
-const jsConfig = require('./javascript')
+const baseConfig = require('.')
 
-const config = require('.')
-
-async function lintFixtures(baseConfig, fixturesDir) {
+test('lints all fixtures', async () => {
   const cli = new CLIEngine({
     baseConfig,
     extensions: ['.js', '.ts', '.tsx'],
     ignore: false,
     useEslintrc: false,
   })
-  const {results} = await cli.executeOnFiles([fixturesDir])
+  const {results} = await cli.executeOnFiles([`${__dirname}/fixtures`])
   results.forEach(result => {
     const basename = path.basename(result.filePath)
     const messages = result.messages.map(message => ({
@@ -26,11 +24,4 @@ async function lintFixtures(baseConfig, fixturesDir) {
     }))
     expect(messages).toMatchSnapshot(basename)
   })
-}
-
-test.each([
-  ['TS', config, `${__dirname}/fixtures/ts`],
-  ['JS', jsConfig, `${__dirname}/fixtures/js`],
-])('lints all %s fixtures', (name, lintConfig, dir) => {
-  lintFixtures(lintConfig, dir)
 })
