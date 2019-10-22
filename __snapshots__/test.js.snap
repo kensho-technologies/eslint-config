@@ -47,6 +47,8 @@ Array [
 ]
 `;
 
+exports[`lints all fixtures: jsdoc.ts 1`] = `Array []`;
+
 exports[`lints all fixtures: prop-types.js 1`] = `
 Array [
   Object {
