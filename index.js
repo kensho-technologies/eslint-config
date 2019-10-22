@@ -26,10 +26,8 @@ module.exports = {
     'jsdoc/require-hyphen-before-param-description': [2, 'never'],
     'jsdoc/require-description': 2,
     'jsdoc/require-description-complete-sentence': 2,
-    'jsdoc/require-param': 2,
     'jsdoc/require-param-description': 2,
     'jsdoc/require-param-name': 2,
-    'jsdoc/require-returns': 2,
     'jsdoc/require-returns-description': 2,
 
     // allow non-ID-linked <label>s to accomodate those containing linked <input>s

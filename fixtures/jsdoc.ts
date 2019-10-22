@@ -8,3 +8,14 @@
 function add(a: number, b: number): number {
   return a + b
 }
+
+/**
+ * Subtracts two numbers.
+ */
+function subtract(a: number, b: number): number {
+  return a - b
+}
+
+function multiply(a: number, b: number): number {
+  return a * b
+}
