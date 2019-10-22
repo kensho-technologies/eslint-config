@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'prettier', 'prettier/react'],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'jsdoc'],
   parser: 'babel-eslint',
   env: {
     // allow browser globals
@@ -16,6 +16,21 @@ module.exports = {
 
     // require import groups to be ordered by specificity and separated by linebreaks
     'import/order': [2, {'newlines-between': 'always'}],
+
+    // require well-formatted JSDoc comments, when they exist
+    'jsdoc/check-alignment': 2,
+    'jsdoc/check-indentation': 2,
+    'jsdoc/check-param-names': 2,
+    'jsdoc/check-tag-names': 2,
+    'jsdoc/newline-after-description': 2,
+    'jsdoc/require-hyphen-before-param-description': [2, 'never'],
+    'jsdoc/require-description': 2,
+    'jsdoc/require-description-complete-sentence': 2,
+    'jsdoc/require-param': 2,
+    'jsdoc/require-param-description': 2,
+    'jsdoc/require-param-name': 2,
+    'jsdoc/require-returns': 2,
+    'jsdoc/require-returns-description': 2,
 
     // allow non-ID-linked <label>s to accomodate those containing linked <input>s
     'jsx-a11y/label-has-for': 0,
@@ -138,6 +153,9 @@ module.exports = {
 
         // prefer T[] style of arrays
         '@typescript-eslint/array-type': 2,
+
+        // prevent types from being redundantly specified in JSDoc comments
+        'jsdoc/no-types': 2,
       },
     },
   ],
