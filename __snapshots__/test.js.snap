@@ -12,16 +12,12 @@ Array [
 ]
 `;
 
-exports[`lints all fixtures: exports.js 1`] = `Array []`;
-
-exports[`lints all fixtures: exports.ts 1`] = `Array []`;
-
 exports[`lints all fixtures: import.js 1`] = `
 Array [
   Object {
     "column": 25,
     "line": 1,
-    "message": "baz not found in './exports'",
+    "message": "baz not found in './js-exports'",
     "rule": "import/named",
     "severity": 2,
   },
@@ -46,6 +42,10 @@ Array [
   },
 ]
 `;
+
+exports[`lints all fixtures: import-ts-from-js.js 1`] = `Array []`;
+
+exports[`lints all fixtures: js-exports.js 1`] = `Array []`;
 
 exports[`lints all fixtures: jsdoc.ts 1`] = `Array []`;
 
@@ -93,6 +93,8 @@ Array [
   },
 ]
 `;
+
+exports[`lints all fixtures: ts-exports.ts 1`] = `Array []`;
 
 exports[`lints all fixtures: variables.js 1`] = `
 Array [

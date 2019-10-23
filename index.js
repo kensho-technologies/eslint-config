@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:import/typescript', 'prettier', 'prettier/react'],
   plugins: ['prettier', 'jsdoc'],
   parser: 'babel-eslint',
   env: {
@@ -114,7 +114,6 @@ module.exports = {
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
     'import/ignore': ['node_modules', '.(png|svg|jpg|css|pdf)$'],
-    'import/extensions': ['.js'],
     react: {version: '16.8.1'},
   },
   overrides: [
@@ -123,7 +122,6 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:import/typescript',
         'prettier/@typescript-eslint',
       ],
       rules: {
