@@ -12,6 +12,8 @@ Array [
 ]
 `;
 
+exports[`lints all fixtures: experimental.tsx 1`] = `Array []`;
+
 exports[`lints all fixtures: import.js 1`] = `
 Array [
   Object {
