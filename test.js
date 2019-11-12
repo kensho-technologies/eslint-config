@@ -5,14 +5,14 @@ const {CLIEngine} = require('eslint')
 
 const baseConfig = require('.')
 
-test('lints all fixtures', async () => {
+test('lints all fixtures', () => {
   const cli = new CLIEngine({
     baseConfig,
     extensions: ['.js', '.ts', '.tsx'],
     ignore: false,
     useEslintrc: false,
   })
-  const {results} = await cli.executeOnFiles([`${__dirname}/fixtures`])
+  const {results} = cli.executeOnFiles([`${__dirname}/fixtures`])
   results.forEach(result => {
     const basename = path.basename(result.filePath)
     const messages = result.messages.map(message => ({
