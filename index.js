@@ -14,6 +14,29 @@ module.exports = {
     'import/default': 2,
     'import/namespace': [2, {allowComputed: true}],
 
+    // allow imports of dev dependencies from tests and sandboxes
+    'import/no-extraneous-dependencies': [
+      2,
+      {
+        devDependencies: [
+          'test/**',
+          'tests/**',
+          'sandbox/**',
+          'spec/**',
+          '**/__tests__/**',
+          '**/__mocks__/**',
+          'test.{js,jsx,ts,tsx}',
+          'test-*.{js,jsx,ts,tsx}',
+          '**/*{.,_}{test,spec}.{js,jsx,ts,tsx}',
+          '**/jest.config.js',
+          '**/jest.setup.{js,jsx,ts,tsx}',
+          '**/webpack.config.js',
+          '**/webpack.config.*.js',
+        ],
+        optionalDependencies: false,
+      },
+    ],
+
     // require import groups to be ordered by specificity and separated by linebreaks
     'import/order': [2, {'newlines-between': 'always'}],
 
