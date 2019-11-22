@@ -166,6 +166,10 @@ module.exports = {
         'react/prop-types': 0,
         'react/react-in-jsx-scope': 0,
 
+        // TODO: remove when https://github.com/typescript-eslint/typescript-eslint/issues/1194 is released
+        'no-unused-expressions': 0,
+        '@typescript-eslint/no-unused-expressions': 2,
+
         // allow ts-ignore comments
         '@typescript-eslint/ban-ts-ignore': 0,
 

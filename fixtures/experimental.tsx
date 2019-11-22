@@ -3,3 +3,5 @@ const bar = 2
 
 const nullishCoalescing = foo ?? bar
 const optionalChaining = foo?.bar
+
+foo?.bar()
