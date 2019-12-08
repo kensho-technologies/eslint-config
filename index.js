@@ -173,6 +173,9 @@ module.exports = {
         // allow ts-ignore comments
         '@typescript-eslint/ban-ts-ignore': 0,
 
+        // emulate the upstream JS behavior
+        '@typescript-eslint/camelcase': [2, {properties: 'never'}],
+
         // prefer T[] style of arrays
         '@typescript-eslint/array-type': 2,
 

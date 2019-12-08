@@ -6,3 +6,5 @@ const unusedA = 1 // unused
 export const functionB = a => {
   return a
 }
+
+export const foo = {my_prop: 'value'}
