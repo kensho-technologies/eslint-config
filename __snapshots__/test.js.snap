@@ -26,6 +26,13 @@ Array [
   Object {
     "column": 27,
     "line": 2,
+    "message": "Missing file extension for \\"./nonexistent\\"",
+    "rule": "import/extensions",
+    "severity": 2,
+  },
+  Object {
+    "column": 27,
+    "line": 2,
     "message": "Unable to resolve path to module './nonexistent'.",
     "rule": "import/no-unresolved",
     "severity": 2,
@@ -35,6 +42,13 @@ Array [
 
 exports[`lints all fixtures: import.ts 1`] = `
 Array [
+  Object {
+    "column": 27,
+    "line": 2,
+    "message": "Missing file extension for \\"./nonexistent\\"",
+    "rule": "import/extensions",
+    "severity": 2,
+  },
   Object {
     "column": 27,
     "line": 2,

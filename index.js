@@ -14,6 +14,13 @@ module.exports = {
     'import/default': 2,
     'import/namespace': [2, {allowComputed: true}],
 
+    // allow extensionless imports of TS files
+    'import/extensions': [
+      2,
+      'ignorePackages',
+      {ts: 'never', tsx: 'never', js: 'never', jsx: 'never', mjs: 'never'},
+    ],
+
     // allow imports of dev dependencies from tests and sandboxes
     'import/no-extraneous-dependencies': [
       2,
