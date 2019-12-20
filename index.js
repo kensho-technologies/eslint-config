@@ -186,6 +186,9 @@ module.exports = {
         // prefer T[] style of arrays
         '@typescript-eslint/array-type': 2,
 
+        // allow noop functions
+        '@typescript-eslint/no-empty-function': 0,
+
         // prevent types from being redundantly specified in JSDoc comments
         'jsdoc/no-types': 2,
       },
