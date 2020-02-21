@@ -181,7 +181,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-ignore': 0,
 
         // emulate the upstream JS behavior
-        '@typescript-eslint/camelcase': [2, {properties: 'never'}],
+        '@typescript-eslint/camelcase': [2, {allow: ['\\w_discouraged$'], properties: 'never'}],
 
         // prefer T[] style of arrays
         '@typescript-eslint/array-type': 2,

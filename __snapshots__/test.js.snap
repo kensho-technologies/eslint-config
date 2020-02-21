@@ -168,5 +168,12 @@ Array [
     "rule": "arrow-body-style",
     "severity": 2,
   },
+  Object {
+    "column": 14,
+    "line": 12,
+    "message": "Identifier 'foo_encouraged' is not in camel case.",
+    "rule": "@typescript-eslint/camelcase",
+    "severity": 2,
+  },
 ]
 `;
