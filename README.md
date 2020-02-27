@@ -31,14 +31,6 @@ Add a script in **package.json** to [run the linter](http://eslint.org/docs/user
 }
 ```
 
-### JavaScript
-
-A JavaScript config is also provided, for projects which do not use TypeScript. To use it, extend `kensho/javascript` instead of `kensho`, e.g.:
-
-```yml
-extends: kensho/javascript
-```
-
 ## Caveat
 
 The ESLint plugin dependencies specified in [package.json](package.json) should actually be peer dependencies (see [this issue](https://github.com/eslint/eslint/issues/2518)), and installed alongside ESLint and this config. In practice, this is quite tedious, so we have instead specified them as dependencies and rely on npm's dependency flattening to install them alongside the linter.
