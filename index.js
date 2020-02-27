@@ -143,7 +143,6 @@ module.exports = {
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
     'import/ignore': ['node_modules', '.(png|svg|jpg|css|pdf)$'],
-    react: {version: '16.8.1'},
   },
   overrides: [
     {
