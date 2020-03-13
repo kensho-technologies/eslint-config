@@ -75,7 +75,7 @@ Array [
     "severity": 2,
   },
   Object {
-    "column": 15,
+    "column": 3,
     "line": 28,
     "message": "'unusedProp' PropType is defined but prop is never used",
     "rule": "react/no-unused-prop-types",
