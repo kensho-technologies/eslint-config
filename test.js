@@ -13,9 +13,9 @@ test('lints all fixtures', () => {
     useEslintrc: false,
   })
   const {results} = cli.executeOnFiles([`${__dirname}/fixtures`])
-  results.forEach(result => {
+  results.forEach((result) => {
     const basename = path.basename(result.filePath)
-    const messages = result.messages.map(message => ({
+    const messages = result.messages.map((message) => ({
       line: message.line,
       column: message.column,
       message: message.message,

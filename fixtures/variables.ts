@@ -3,7 +3,7 @@ export const globalB = implicitGlobal() // implicit global
 const unusedA = 1 // unused
 
 // unnecessary body style
-export const functionB = a => {
+export const functionB = (a) => {
   return a
 }
 

@@ -38,11 +38,11 @@ export default class MyComponent extends React.Component {
     func('mounted')
   }
 
-  handleMouseEnter = event => {
+  handleMouseEnter = (event) => {
     this.doSomething(event)
   }
 
-  handleMouseLeave = event => {
+  handleMouseLeave = (event) => {
     this.doSomething(event)
   }
 

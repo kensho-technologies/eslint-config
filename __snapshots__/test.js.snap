@@ -136,7 +136,7 @@ Array [
     "severity": 2,
   },
   Object {
-    "column": 31,
+    "column": 33,
     "line": 6,
     "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the \`=>\`.",
     "rule": "arrow-body-style",
@@ -162,7 +162,7 @@ Array [
     "severity": 2,
   },
   Object {
-    "column": 31,
+    "column": 33,
     "line": 6,
     "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the \`=>\`.",
     "rule": "arrow-body-style",
