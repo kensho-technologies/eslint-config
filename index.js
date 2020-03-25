@@ -30,6 +30,7 @@ module.exports = {
           'tests/**',
           'sandbox/**',
           'spec/**',
+          '**/__integration__/**',
           '**/__tests__/**',
           '**/__mocks__/**',
           'test.{js,jsx,ts,tsx}',
