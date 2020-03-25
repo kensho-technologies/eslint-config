@@ -14,11 +14,11 @@
     "index.js"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.24.0",
-    "@typescript-eslint/parser": "^2.24.0",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
     "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsdoc": "^22.1.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "jest": "^25.1.0",
-    "prettier": "^2.0.1",
+    "jest": "^25.2.0",
+    "prettier": "^2.0.2",
     "react": "^16.13.1",
     "typescript": "^3.8.3"
   }
