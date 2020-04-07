@@ -177,6 +177,10 @@ module.exports = {
         'no-unused-expressions': 0,
         '@typescript-eslint/no-unused-expressions': 2,
 
+        // exchange base rule for TS-specific rule
+        'no-useless-constructor': 0,
+        '@typescript-eslint/no-useless-constructor': 2,
+
         // allow ts-ignore comments
         '@typescript-eslint/ban-ts-ignore': 0,
 

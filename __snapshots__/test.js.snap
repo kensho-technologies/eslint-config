@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lints all fixtures: class.tsx 1`] = `Array []`;
+
 exports[`lints all fixtures: component.js 1`] = `
 Array [
   Object {
