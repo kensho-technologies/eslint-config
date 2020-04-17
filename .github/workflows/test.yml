@@ -9,5 +9,3 @@ jobs:
         with:
           node-version: 12.x
       - run: npm cit
-        env:
-          CI: true
