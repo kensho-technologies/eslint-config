@@ -6,12 +6,7 @@ const {ESLint} = require('eslint')
 const baseConfig = require('.')
 
 test('lints all fixtures', async () => {
-  const eslint = new ESLint({
-    baseConfig,
-    extensions: ['.js', '.ts', '.tsx'],
-    ignore: false,
-    useEslintrc: false,
-  })
+  const eslint = new ESLint({baseConfig, ignore: false, useEslintrc: false})
   const results = await eslint.lintFiles([`${__dirname}/fixtures`])
   results.forEach((result) => {
     const basename = path.basename(result.filePath)
