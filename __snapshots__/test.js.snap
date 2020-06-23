@@ -173,7 +173,7 @@ Array [
   Object {
     "column": 14,
     "line": 12,
-    "message": "Variable name \`foo_encouraged\` must match one of the following formats: camelCase, UPPER_CASE",
+    "message": "Variable name \`foo_encouraged\` must match one of the following formats: camelCase, UPPER_CASE, PascalCase",
     "rule": "@typescript-eslint/naming-convention",
     "severity": 2,
   },

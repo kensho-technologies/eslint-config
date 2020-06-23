@@ -187,13 +187,8 @@ module.exports = {
         '@typescript-eslint/naming-convention': [
           2,
           {
-            selector: 'function',
-            format: ['camelCase', 'PascalCase'],
-            filter: {regex: '\\w_discouraged$', match: false},
-          },
-          {
             selector: 'variableLike',
-            format: ['camelCase', 'UPPER_CASE'],
+            format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
             filter: {regex: '\\w_discouraged$', match: false},
           },
           {selector: 'typeLike', format: ['PascalCase']},
