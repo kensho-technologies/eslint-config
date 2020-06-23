@@ -173,8 +173,8 @@ Array [
   Object {
     "column": 14,
     "line": 12,
-    "message": "Identifier 'foo_encouraged' is not in camel case.",
-    "rule": "@typescript-eslint/camelcase",
+    "message": "Variable name \`foo_encouraged\` must match one of the following formats: camelCase, UPPER_CASE",
+    "rule": "@typescript-eslint/naming-convention",
     "severity": 2,
   },
 ]

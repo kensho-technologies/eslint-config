@@ -12,6 +12,7 @@ module.exports = {
 
     // ensure that default, named, and namespaced imports have been exported by the target file
     'import/default': 2,
+    'import/named': 2,
     'import/namespace': [2, {allowComputed: true}],
 
     // allow extensionless imports of TS files
@@ -147,17 +148,16 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-        'prettier/@typescript-eslint',
-      ],
+      extends: ['plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint'],
       rules: {
-        // upgrade severity from warning to error
+        // require all functions to have type annotations
+        '@typescript-eslint/explicit-module-boundary-types': 0,
         '@typescript-eslint/explicit-function-return-type': [
           2,
           {allowExpressions: true, allowTypedFunctionExpressions: true},
         ],
+
+        // upgrade severity from warning to error
         '@typescript-eslint/no-explicit-any': 2,
         '@typescript-eslint/no-non-null-assertion': 2,
 
@@ -173,7 +173,6 @@ module.exports = {
         'react/prop-types': 0,
         'react/react-in-jsx-scope': 0,
 
-        // TODO: remove when https://github.com/typescript-eslint/typescript-eslint/issues/1194 is released
         'no-unused-expressions': 0,
         '@typescript-eslint/no-unused-expressions': 2,
 
@@ -182,10 +181,24 @@ module.exports = {
         '@typescript-eslint/no-useless-constructor': 2,
 
         // allow ts-ignore comments
-        '@typescript-eslint/ban-ts-ignore': 0,
+        '@typescript-eslint/ban-ts-comment': 0,
 
         // emulate the upstream JS behavior
-        '@typescript-eslint/camelcase': [2, {allow: ['\\w_discouraged$'], properties: 'never'}],
+        '@typescript-eslint/naming-convention': [
+          2,
+          {
+            selector: 'function',
+            format: ['camelCase', 'PascalCase'],
+            filter: {regex: '\\w_discouraged$', match: false},
+          },
+          {
+            selector: 'variableLike',
+            format: ['camelCase', 'UPPER_CASE'],
+            filter: {regex: '\\w_discouraged$', match: false},
+          },
+          {selector: 'typeLike', format: ['PascalCase']},
+        ],
+        camelcase: 0,
 
         // prefer T[] style of arrays
         '@typescript-eslint/array-type': 2,
