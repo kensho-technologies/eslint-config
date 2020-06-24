@@ -189,6 +189,7 @@ module.exports = {
           {
             selector: 'variableLike',
             format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
+            leadingUnderscore: 'allow',
             filter: {regex: '\\w_discouraged$', match: false},
           },
           {selector: 'typeLike', format: ['PascalCase']},
