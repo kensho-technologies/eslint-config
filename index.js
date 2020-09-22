@@ -180,6 +180,10 @@ module.exports = {
         'no-useless-constructor': 0,
         '@typescript-eslint/no-useless-constructor': 2,
 
+        // exchange base rule for TS-specific rule
+        'no-use-before-define': 0,
+        '@typescript-eslint/no-use-before-define': 2,
+
         // allow ts-ignore comments
         '@typescript-eslint/ban-ts-comment': 0,
 
