@@ -1,6 +1,6 @@
 # eslint-config-kensho
 
-[![Build Status](https://github.com/kensho-technologies/eslint-config-kensho/workflows/test/badge.svg)](https://github.com/kensho-technologies/eslint-config-kensho/actions)
+[![Build Status](https://img.shields.io/github/workflow/status/kensho-technologies/eslint-config-kensho/test/master)](https://github.com/kensho-technologies/eslint-config-kensho/actions)
 [![npm](https://img.shields.io/npm/v/eslint-config-kensho.svg)](https://npm.im/eslint-config-kensho)
 
 This [ESLint config](http://eslint.org/docs/developer-guide/shareable-configs) extends [Airbnb's config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) (based on their [style guide](https://github.com/airbnb/javascript)) to work with TypeScript.
