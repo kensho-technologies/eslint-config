@@ -26,7 +26,7 @@ Add a script in **package.json** to [run the linter](http://eslint.org/docs/user
 ```json
 {
   "scripts": {
-    "lint": "eslint src --ext=tsx"
+    "test": "eslint ."
   }
 }
 ```
