@@ -2,6 +2,9 @@
   "name": "@kensho-technologies/eslint-config",
   "version": "19.0.0",
   "description": "Standard Kensho config to lint JS files.",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "author": "Kensho Technologies, LLC.",
   "license": "Apache-2.0",
