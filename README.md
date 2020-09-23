@@ -36,3 +36,9 @@ Add a script in **package.json** to [run the linter](http://eslint.org/docs/user
 The ESLint plugin dependencies specified in [package.json](package.json) should actually be peer dependencies (see [this issue](https://github.com/eslint/eslint/issues/2518)), and installed alongside ESLint and this config. In practice, this is quite tedious, so we have instead specified them as dependencies and rely on npm's dependency flattening to install them alongside the linter.
 
 Note that this approach is technically incorrect, and if any plugin cannot be flattened this way (e.g. due to a conflicting version somewhere else in your dependency tree), **this config will break**. Since our projects use only this config, we feel that practicality outweighs absolute correctness in this case.
+
+## License
+
+Licensed under the Apache 2.0 License. Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+Copyright 2020-present Kensho Technologies, LLC. The present date is determined by the timestamp of the most recent commit in the repository.

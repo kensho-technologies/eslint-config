@@ -3,9 +3,9 @@
   "version": "18.0.2",
   "description": "Standard Kensho config to lint JS files.",
   "main": "index.js",
-  "author": "Billy Janitsch <billyjanitsch@gmail.com> (http://billyjanitsch.com)",
-  "license": "MIT",
-  "repository": "kensho/eslint-config-kensho",
+  "author": "Kensho Technologies, LLC.",
+  "license": "Apache-2.0",
+  "repository": "kensho-technologies/eslint-config-kensho",
   "scripts": {
     "test": "eslint . && jest",
     "prepublishOnly": "npm test"
