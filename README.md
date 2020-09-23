@@ -9,10 +9,10 @@ Since the upstream config is well-maintained and justified, we try to stick as c
 
 ## Usage
 
-To add linting to a project, first install ESLint, Prettier, TypeScript, and this config as development dependencies:
+To add linting to a project, first install ESLint, TypeScript, and this config as development dependencies:
 
 ```sh
-$ npm i -D eslint prettier typescript eslint-config-kensho
+$ npm i -D eslint typescript eslint-config-kensho
 ```
 
 Add an [**ESLint config**](http://eslint.org/docs/user-guide/configuring) which extends the config, e.g.:
