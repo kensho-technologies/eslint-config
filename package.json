@@ -7,12 +7,14 @@
   "license": "Apache-2.0",
   "repository": "kensho-technologies/eslint-config-kensho",
   "scripts": {
-    "test": "eslint . && jest",
+    "fix": "prettier -w . && eslint --fix .",
+    "test": "prettier -c . && eslint . && jest",
     "prepublishOnly": "npm test"
   },
   "files": [
     "index.js"
   ],
+  "prettier": "@kensho-technologies/prettier-config",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
@@ -22,11 +24,11 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsdoc": "^30.5.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2"
   },
   "devDependencies": {
+    "@kensho-technologies/prettier-config": "^0.1.0",
     "eslint": "^7.9.0",
     "jest": "^26.4.2",
     "prettier": "^2.1.2",

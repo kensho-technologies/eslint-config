@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'plugin:import/typescript', 'prettier', 'prettier/react'],
-  plugins: ['prettier', 'jsdoc'],
+  plugins: ['jsdoc'],
   parser: 'babel-eslint',
   env: {
     // allow browser globals
@@ -70,16 +70,6 @@ module.exports = {
 
     // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
     'prefer-arrow-callback': [2, {allowNamedFunctions: false, allowUnboundThis: true}],
-
-    'prettier/prettier': [
-      2,
-      {
-        printWidth: 100,
-        semi: false,
-        singleQuote: true,
-        bracketSpacing: false,
-      },
-    ],
 
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
