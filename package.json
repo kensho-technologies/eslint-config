@@ -19,9 +19,9 @@
   ],
   "prettier": "@kensho-technologies/prettier-config",
   "dependencies": {
+    "@babel/eslint-parser": "^7.11.5",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
-    "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-import": "^2.22.0",
@@ -31,6 +31,8 @@
     "eslint-plugin-react-hooks": "^4.1.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@kensho-technologies/babel-preset": "^12.3.0",
     "@kensho-technologies/prettier-config": "^0.1.0",
     "eslint": "^7.9.0",
     "jest": "^26.4.2",
