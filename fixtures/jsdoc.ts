@@ -1,3 +1,5 @@
+/** @jest-environment node */
+
 /**
  * Adds two numbers.
  *
