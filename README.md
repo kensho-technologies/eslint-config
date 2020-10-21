@@ -5,12 +5,18 @@
 
 This [ESLint config](http://eslint.org/docs/developer-guide/shareable-configs) extends [Airbnb's config](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) (based on their [style guide](https://github.com/airbnb/javascript)) to work with TypeScript.
 
-Since the upstream config is well-maintained and justified, we try to stick as close to it as possible. All divergences are [annotated](index.js), and tend towards increased ES2019 support, Prettier adoption, and TypeScript compatibility, rather than stylistic preferences.
+Since the upstream config is well-maintained and justified, we try to stick as close to it as possible. All divergences are [annotated](index.js), and tend towards increased ES2020 support, Prettier adoption, and TypeScript compatibility, rather than stylistic preferences.
 
 ## Install
 
 ```sh
 $ npm i -D eslint typescript @kensho-technologies/eslint-config
+```
+
+If using npm <= 6, peer dependencies must be installed manually. This can be done by running:
+
+```sh
+$ npx install-peerdeps --dev @kensho-technologies/eslint-config
 ```
 
 ## Usage
@@ -33,12 +39,6 @@ Add scripts in **package.json** to [run the linter](http://eslint.org/docs/user-
   }
 }
 ```
-
-## Caveat
-
-The ESLint plugin dependencies specified in [package.json](package.json) should actually be peer dependencies (see [this issue](https://github.com/eslint/eslint/issues/2518)), and installed alongside ESLint and this config. In practice, this is quite tedious, so we have instead specified them as dependencies and rely on npm's dependency flattening to install them alongside the linter.
-
-Note that this approach is technically incorrect, and if any plugin cannot be flattened this way (e.g. due to a conflicting version somewhere else in your dependency tree), **this config will break**. Since our projects use only this config, we feel that practicality outweighs absolute correctness in this case.
 
 ## License
 
