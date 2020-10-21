@@ -2,6 +2,9 @@ module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'plugin:import/typescript', 'prettier', 'prettier/react'],
   plugins: ['jsdoc'],
   parser: 'babel-eslint',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   env: {
     // allow browser globals
     browser: true,
@@ -184,6 +187,13 @@ module.exports = {
         // emulate the upstream JS behavior
         '@typescript-eslint/naming-convention': [
           2,
+          {
+            selector: 'variable',
+            modifiers: ['const'],
+            format: ['UPPER_CASE', 'camelCase'],
+            filter: {regex: '\\w_discouraged$', match: false},
+            types: ['boolean', 'string', 'number', 'array'],
+          },
           {
             selector: 'variableLike',
             format: ['camelCase', 'UPPER_CASE', 'PascalCase'],
