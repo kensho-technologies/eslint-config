@@ -83,6 +83,9 @@ module.exports = {
     // allow spreading props
     'react/jsx-props-no-spreading': 0,
 
+    // the modern JSX runtime does not require React to be in scope
+    'react/react-in-jsx-scope': 0,
+
     // do not require default props for optional props
     'react/require-default-props': 0,
 
