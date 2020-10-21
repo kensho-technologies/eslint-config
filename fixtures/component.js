@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types' // eslint-disable-line
-import * as React from 'react' // eslint-disable-line
+import {Component, Fragment} from 'react' // eslint-disable-line
 
-export default class MyComponent extends React.Component {
+export default class MyComponent extends Component {
   static propTypes = {
     string: PropTypes.string,
     number: PropTypes.number.isRequired,
@@ -69,13 +69,13 @@ export default class MyComponent extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
+      <Fragment>
         <div onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}>
           {this.getSomething()}
         </div>
         {this.renderSomething()}
         {this.renderSomethingElse()}
-      </React.Fragment>
+      </Fragment>
     )
   }
 }

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types' // eslint-disable-line
-import * as React from 'react' // eslint-disable-line
 
 export default function MyComponent(props) {
   const {
