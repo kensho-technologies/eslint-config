@@ -34,10 +34,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",
-    "@kensho-technologies/babel-preset": "^13.3.0",
+    "@kensho-technologies/babel-preset": "^14.0.1",
     "@kensho-technologies/prettier-config": "^1.0.0",
     "eslint": "^7.12.1",
-    "jest": "^26.6.1",
+    "jest": "^26.6.3",
     "prettier": "^2.1.2",
     "react": "^17.0.1",
     "typescript": "^4.0.5"
