@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:import/typescript', 'prettier', 'prettier/react'],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:import/typescript', 'prettier'],
   plugins: ['jsdoc'],
   parser: '@babel/eslint-parser',
   parserOptions: {
@@ -144,7 +144,7 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['plugin:@typescript-eslint/recommended', 'prettier/@typescript-eslint'],
+      extends: ['plugin:@typescript-eslint/recommended', 'prettier'],
       rules: {
         // require all functions to have type annotations
         '@typescript-eslint/explicit-module-boundary-types': 0,
