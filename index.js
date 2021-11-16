@@ -86,6 +86,9 @@ module.exports = {
     // the modern JSX runtime does not require React to be in scope
     'react/react-in-jsx-scope': 0,
 
+    // do not enforce a particular style of component definition
+    'react/function-component-definition': 0,
+
     // do not require default props for optional props
     'react/require-default-props': 0,
 
