@@ -176,6 +176,9 @@ module.exports = {
         'react/prop-types': 0,
         'react/react-in-jsx-scope': 0,
 
+        'default-param-last': 0,
+        '@typescript-eslint/default-param-last': 2,
+
         'no-unused-expressions': 0,
         '@typescript-eslint/no-unused-expressions': 2,
 
