@@ -1,6 +1,6 @@
 {
   "name": "@kensho-technologies/eslint-config",
-  "version": "23.0.0",
+  "version": "23.1.0",
   "description": "Standard Kensho config to lint JS files.",
   "publishConfig": {
     "access": "public"
