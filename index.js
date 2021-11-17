@@ -80,6 +80,10 @@ module.exports = {
     // allow function creation in render
     'react/jsx-no-bind': 0,
 
+    // permit useless fragments because they're sometimes necessary for function components to
+    // return `JSX.Element` in TypeScript
+    'react/jsx-no-useless-fragment': 0,
+
     // allow spreading props
     'react/jsx-props-no-spreading': 0,
 
