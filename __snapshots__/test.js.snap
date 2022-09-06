@@ -23,13 +23,6 @@ exports[`lints all fixtures: emotion.tsx 1`] = `
     "rule": "import/no-extraneous-dependencies",
     "severity": 2,
   },
-  {
-    "column": 10,
-    "line": 15,
-    "message": "Unknown property 'css' found",
-    "rule": "react/no-unknown-property",
-    "severity": 2,
-  },
 ]
 `;
 
