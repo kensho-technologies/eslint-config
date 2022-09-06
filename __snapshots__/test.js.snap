@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lints all fixtures: class.tsx 1`] = `Array []`;
+exports[`lints all fixtures: class.tsx 1`] = `[]`;
 
 exports[`lints all fixtures: component.js 1`] = `
-Array [
-  Object {
+[
+  {
     "column": 7,
     "line": 72,
     "message": "Prefer fragment shorthand over React.Fragment",
@@ -14,25 +14,25 @@ Array [
 ]
 `;
 
-exports[`lints all fixtures: experimental.tsx 1`] = `Array []`;
+exports[`lints all fixtures: experimental.tsx 1`] = `[]`;
 
 exports[`lints all fixtures: import.js 1`] = `
-Array [
-  Object {
+[
+  {
     "column": 25,
     "line": 1,
     "message": "baz not found in './js-exports'",
     "rule": "import/named",
     "severity": 2,
   },
-  Object {
+  {
     "column": 27,
     "line": 2,
-    "message": "Missing file extension for \\"./nonexistent\\"",
+    "message": "Missing file extension for "./nonexistent"",
     "rule": "import/extensions",
     "severity": 2,
   },
-  Object {
+  {
     "column": 27,
     "line": 2,
     "message": "Unable to resolve path to module './nonexistent'.",
@@ -43,15 +43,15 @@ Array [
 `;
 
 exports[`lints all fixtures: import.ts 1`] = `
-Array [
-  Object {
+[
+  {
     "column": 27,
     "line": 2,
-    "message": "Missing file extension for \\"./nonexistent\\"",
+    "message": "Missing file extension for "./nonexistent"",
     "rule": "import/extensions",
     "severity": 2,
   },
-  Object {
+  {
     "column": 27,
     "line": 2,
     "message": "Unable to resolve path to module './nonexistent'.",
@@ -61,32 +61,32 @@ Array [
 ]
 `;
 
-exports[`lints all fixtures: import-ts-from-js.js 1`] = `Array []`;
+exports[`lints all fixtures: import-ts-from-js.js 1`] = `[]`;
 
-exports[`lints all fixtures: js-exports.js 1`] = `Array []`;
+exports[`lints all fixtures: js-exports.js 1`] = `[]`;
 
-exports[`lints all fixtures: jsdoc.ts 1`] = `Array []`;
+exports[`lints all fixtures: jsdoc.ts 1`] = `[]`;
 
 exports[`lints all fixtures: prop-types.js 1`] = `
-Array [
-  Object {
+[
+  {
     "column": 5,
     "line": 9,
     "message": "'propWithoutPropType' is missing in props validation",
     "rule": "react/prop-types",
     "severity": 2,
   },
-  Object {
+  {
     "column": 3,
     "line": 27,
     "message": "'unusedProp' PropType is defined but prop is never used",
     "rule": "react/no-unused-prop-types",
     "severity": 2,
   },
-  Object {
+  {
     "column": 3,
     "line": 32,
-    "message": "defaultProp \\"requiredPropWithDefault\\" defined for isRequired propType.",
+    "message": "defaultProp "requiredPropWithDefault" defined for isRequired propType.",
     "rule": "react/default-props-match-prop-types",
     "severity": 2,
   },
@@ -94,50 +94,50 @@ Array [
 `;
 
 exports[`lints all fixtures: prop-types.tsx 1`] = `
-Array [
-  Object {
+[
+  {
     "column": 16,
     "line": 3,
     "message": "Missing return type on function.",
     "rule": "@typescript-eslint/explicit-function-return-type",
     "severity": 2,
   },
-  Object {
+  {
     "column": 3,
     "line": 32,
-    "message": "defaultProp \\"requiredPropWithDefault\\" defined for isRequired propType.",
+    "message": "defaultProp "requiredPropWithDefault" defined for isRequired propType.",
     "rule": "react/default-props-match-prop-types",
     "severity": 2,
   },
 ]
 `;
 
-exports[`lints all fixtures: ts-exports.ts 1`] = `Array []`;
+exports[`lints all fixtures: ts-exports.ts 1`] = `[]`;
 
 exports[`lints all fixtures: variables.js 1`] = `
-Array [
-  Object {
+[
+  {
     "column": 24,
     "line": 1,
     "message": "Unexpected use of 'find'.",
     "rule": "no-restricted-globals",
     "severity": 2,
   },
-  Object {
+  {
     "column": 24,
     "line": 2,
     "message": "'implicitGlobal' is not defined.",
     "rule": "no-undef",
     "severity": 2,
   },
-  Object {
+  {
     "column": 7,
     "line": 3,
     "message": "'unusedA' is assigned a value but never used.",
     "rule": "no-unused-vars",
     "severity": 2,
   },
-  Object {
+  {
     "column": 33,
     "line": 6,
     "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the \`=>\`.",
@@ -148,29 +148,29 @@ Array [
 `;
 
 exports[`lints all fixtures: variables.ts 1`] = `
-Array [
-  Object {
+[
+  {
     "column": 24,
     "line": 1,
     "message": "Unexpected use of 'find'.",
     "rule": "no-restricted-globals",
     "severity": 2,
   },
-  Object {
+  {
     "column": 26,
     "line": 6,
     "message": "Missing return type on function.",
     "rule": "@typescript-eslint/explicit-function-return-type",
     "severity": 2,
   },
-  Object {
+  {
     "column": 33,
     "line": 6,
     "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the \`=>\`.",
     "rule": "arrow-body-style",
     "severity": 2,
   },
-  Object {
+  {
     "column": 14,
     "line": 12,
     "message": "Variable name \`foo_encouraged\` must match one of the following formats: camelCase, UPPER_CASE, PascalCase",
