@@ -23,6 +23,13 @@ exports[`lints all fixtures: emotion.tsx 1`] = `
     "rule": "import/no-extraneous-dependencies",
     "severity": 2,
   },
+  {
+    "column": 22,
+    "line": 17,
+    "message": "'css' is already declared in the upper scope on line 1 column 21.",
+    "rule": "@typescript-eslint/no-shadow",
+    "severity": 2,
+  },
 ]
 `;
 
