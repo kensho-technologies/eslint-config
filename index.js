@@ -193,7 +193,7 @@ module.exports = {
 
         // exchange base rule for TS-specific rule
         'no-shadow': 0,
-        '@typescript-eslint/no-shadow': 2,
+        '@typescript-eslint/no-shadow': [2, {allow: ['css']}],
 
         // allow ts-ignore comments
         '@typescript-eslint/ban-ts-comment': 0,
