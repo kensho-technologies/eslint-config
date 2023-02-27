@@ -13,12 +13,6 @@ Since the upstream config is well-maintained and justified, we try to stick as c
 $ npm i -D eslint typescript @kensho-technologies/eslint-config
 ```
 
-If using npm <= 6, peer dependencies must be installed manually. This can be done by running:
-
-```sh
-$ npx install-peerdeps --dev @kensho-technologies/eslint-config
-```
-
 ## Usage
 
 Add an [**ESLint config**](http://eslint.org/docs/user-guide/configuring) that extends the config to a project, e.g.:
