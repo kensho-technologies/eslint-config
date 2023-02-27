@@ -37,13 +37,6 @@ exports[`lints all fixtures: functionComponent.tsx 1`] = `
     "rule": "import/no-extraneous-dependencies",
     "severity": 2,
   },
-  {
-    "column": 25,
-    "line": 14,
-    "message": "Must use destructuring theme assignment",
-    "rule": "react/destructuring-assignment",
-    "severity": 2,
-  },
 ]
 `;
 

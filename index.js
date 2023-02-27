@@ -74,6 +74,10 @@ module.exports = {
     // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
     'prefer-arrow-callback': [2, {allowNamedFunctions: false, allowUnboundThis: true}],
 
+    // TODO: re-enable this rule once this bug is fixed:
+    // https://github.com/jsx-eslint/eslint-plugin-react/issues/3536
+    'react/destructuring-assignment': 0,
+
     // disallow .jsx files for consistency
     'react/jsx-filename-extension': 0,
 
