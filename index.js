@@ -169,7 +169,6 @@ module.exports = {
         '@typescript-eslint/no-non-null-assertion': 2,
 
         // these are checked by the TS compiler
-        '@typescript-eslint/no-unused-vars': 0,
         'import/default': 0,
         'import/export': 0,
         'import/named': 0,

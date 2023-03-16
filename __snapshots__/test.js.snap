@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lints all fixtures: class.tsx 1`] = `[]`;
+exports[`lints all fixtures: class.tsx 1`] = `
+[
+  {
+    "column": 7,
+    "line": 1,
+    "message": "'Foo' is defined but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+]
+`;
 
 exports[`lints all fixtures: component.js 1`] = `
 [
@@ -26,7 +36,24 @@ exports[`lints all fixtures: emotion.tsx 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: experimental.tsx 1`] = `[]`;
+exports[`lints all fixtures: experimental.tsx 1`] = `
+[
+  {
+    "column": 7,
+    "line": 4,
+    "message": "'nullishCoalescing' is assigned a value but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+  {
+    "column": 7,
+    "line": 5,
+    "message": "'optionalChaining' is assigned a value but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+]
+`;
 
 exports[`lints all fixtures: functionComponent.tsx 1`] = `
 [
@@ -89,7 +116,38 @@ exports[`lints all fixtures: import-ts-from-js.js 1`] = `[]`;
 
 exports[`lints all fixtures: js-exports.js 1`] = `[]`;
 
-exports[`lints all fixtures: jsdoc.ts 1`] = `[]`;
+exports[`lints all fixtures: jsdoc.ts 1`] = `
+[
+  {
+    "column": 10,
+    "line": 10,
+    "message": "'add' is defined but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+  {
+    "column": 10,
+    "line": 17,
+    "message": "'subtract' is defined but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+  {
+    "column": 10,
+    "line": 21,
+    "message": "'multiply' is defined but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+  {
+    "column": 10,
+    "line": 26,
+    "message": "'divide' is defined but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+]
+`;
 
 exports[`lints all fixtures: prop-types.js 1`] = `
 [
@@ -181,6 +239,13 @@ exports[`lints all fixtures: variables.ts 1`] = `
     "severity": 2,
   },
   {
+    "column": 7,
+    "line": 3,
+    "message": "'unusedA' is assigned a value but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+  {
     "column": 26,
     "line": 6,
     "message": "Missing return type on function.",
@@ -195,8 +260,15 @@ exports[`lints all fixtures: variables.ts 1`] = `
     "severity": 2,
   },
   {
+    "column": 64,
+    "line": 10,
+    "message": "'c' is defined but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
+  {
     "column": 14,
-    "line": 12,
+    "line": 16,
     "message": "Variable name \`foo_encouraged\` must match one of the following formats: camelCase, UPPER_CASE, PascalCase",
     "rule": "@typescript-eslint/naming-convention",
     "severity": 2,
