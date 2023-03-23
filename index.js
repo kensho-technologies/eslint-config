@@ -13,6 +13,9 @@ module.exports = {
     // https://github.com/prettier/eslint-config-prettier#arrow-body-style-and-prefer-arrow-callback
     'arrow-body-style': [2, 'as-needed', {requireReturnForObjectLiteral: false}],
 
+    // disallow uncommon syntax that is hard to use correctly
+    'no-restricted-syntax': [2, 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+
     // ensure that default, named, and namespaced imports have been exported by the target file
     'import/default': 2,
     'import/named': 2,
