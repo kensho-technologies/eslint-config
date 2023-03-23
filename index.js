@@ -21,6 +21,9 @@ module.exports = {
     'import/named': 2,
     'import/namespace': [2, {allowComputed: true}],
 
+    // allow files with a single named export
+    'import/prefer-default-export': 0,
+
     // allow extensionless imports of TS files
     'import/extensions': [
       2,

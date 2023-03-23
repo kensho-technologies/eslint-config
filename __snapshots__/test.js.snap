@@ -194,17 +194,7 @@ exports[`lints all fixtures: prop-types.tsx 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: syntax.tsx 1`] = `
-[
-  {
-    "column": 1,
-    "line": 1,
-    "message": "Prefer default export on a file with single export.",
-    "rule": "import/prefer-default-export",
-    "severity": 2,
-  },
-]
-`;
+exports[`lints all fixtures: syntax.tsx 1`] = `[]`;
 
 exports[`lints all fixtures: ts-exports.ts 1`] = `[]`;
 
