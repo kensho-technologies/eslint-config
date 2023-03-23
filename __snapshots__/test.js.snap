@@ -64,6 +64,13 @@ exports[`lints all fixtures: functionComponent.tsx 1`] = `
     "rule": "import/no-extraneous-dependencies",
     "severity": 2,
   },
+  {
+    "column": 16,
+    "line": 11,
+    "message": "'unused' is assigned a value but never used.",
+    "rule": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+  },
 ]
 `;
 
