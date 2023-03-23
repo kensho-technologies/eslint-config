@@ -220,6 +220,9 @@ module.exports = {
         // allow noop functions
         '@typescript-eslint/no-empty-function': 0,
 
+        // disallow unused variables
+        '@typescript-eslint/no-unused-vars': [2, {ignoreRestSiblings: true}],
+
         // prevent types from being redundantly specified in JSDoc comments
         'jsdoc/no-types': 2,
       },
