@@ -7,7 +7,7 @@ exports[`lints all fixtures: class.tsx 1`] = `
     "line": 1,
     "message": "'Foo' is defined but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
 ]
 `;
@@ -43,14 +43,14 @@ exports[`lints all fixtures: experimental.tsx 1`] = `
     "line": 4,
     "message": "'nullishCoalescing' is assigned a value but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
   {
     "column": 7,
     "line": 5,
     "message": "'optionalChaining' is assigned a value but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
 ]
 `;
@@ -123,28 +123,28 @@ exports[`lints all fixtures: jsdoc.ts 1`] = `
     "line": 10,
     "message": "'add' is defined but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
   {
     "column": 10,
     "line": 17,
     "message": "'subtract' is defined but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
   {
     "column": 10,
     "line": 21,
     "message": "'multiply' is defined but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
   {
     "column": 10,
     "line": 26,
     "message": "'divide' is defined but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
 ]
 `;
@@ -243,7 +243,7 @@ exports[`lints all fixtures: variables.ts 1`] = `
     "line": 3,
     "message": "'unusedA' is assigned a value but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
   {
     "column": 26,
@@ -264,7 +264,7 @@ exports[`lints all fixtures: variables.ts 1`] = `
     "line": 10,
     "message": "'c' is defined but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 1,
+    "severity": 2,
   },
   {
     "column": 14,
