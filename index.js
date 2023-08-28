@@ -63,7 +63,7 @@ module.exports = {
     'jsdoc/check-indentation': 2,
     'jsdoc/check-param-names': 2,
     'jsdoc/check-tag-names': [2, {definedTags: ['jest-environment']}],
-    'jsdoc/newline-after-description': 2,
+    // 'jsdoc/newline-after-description': 2,
     'jsdoc/require-hyphen-before-param-description': [2, 'never'],
     'jsdoc/require-description': 2,
     'jsdoc/require-param-description': 2,
@@ -161,7 +161,11 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      extends: ['plugin:@typescript-eslint/recommended', 'prettier'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/stylistic',
+        'prettier',
+      ],
       rules: {
         // require all functions to have type annotations
         '@typescript-eslint/explicit-module-boundary-types': 0,
