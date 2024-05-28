@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'plugin:import/typescript', 'prettier'],
-  plugins: ['jsdoc'],
+  plugins: ['jsdoc', 'react-compiler'],
   parserOptions: {
     ecmaVersion: 'latest',
   },
@@ -148,6 +148,8 @@ module.exports = {
 
     // require statics to be declared as public fields
     'react/static-property-placement': [2, 'static public field'],
+
+    'react-compiler/react-compiler': 2,
   },
   settings: {
     // do not attempt to parse npm modules or non-JS files for exports
