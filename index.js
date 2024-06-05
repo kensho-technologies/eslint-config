@@ -221,6 +221,7 @@ module.exports = {
         '@typescript-eslint/array-type': 2,
 
         // allow noop functions
+        'no-empty-function': 0,
         '@typescript-eslint/no-empty-function': 0,
 
         // disallow unused variables
