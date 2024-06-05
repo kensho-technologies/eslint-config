@@ -1,9 +1,8 @@
 module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'plugin:import/typescript', 'prettier'],
   plugins: ['jsdoc'],
-  parser: '@babel/eslint-parser',
   parserOptions: {
-    requireConfigFile: false,
+    ecmaVersion: 'latest',
   },
   env: {
     // allow browser globals
