@@ -1,8 +1,10 @@
 {
   "extends": "@kensho-technologies/tsconfig",
-  "include": ["fixtures"],
+  "include": ["tests"],
+  "exclude": ["tests/fixtures"],
   "compilerOptions": {
     "jsxImportSource": "@emotion/react",
-    "noEmit": true
+    "noEmit": true,
+    "types": ["node"]
   }
 }

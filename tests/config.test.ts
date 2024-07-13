@@ -1,13 +1,11 @@
-/* eslint-env jest */
-const path = require('path')
+import path from 'node:path'
 
-const {ESLint} = require('eslint')
-
-const baseConfig = require('.')
+import {test, expect} from 'vitest'
+import {ESLint} from 'eslint'
 
 test('lints all fixtures', async () => {
-  const eslint = new ESLint({baseConfig, ignore: false, useEslintrc: false})
-  const results = await eslint.lintFiles([`${__dirname}/fixtures`])
+  const eslint = new ESLint({ignore: false})
+  const results = await eslint.lintFiles([`${import.meta.dirname}/fixtures`])
   results.forEach((result) => {
     const basename = path.basename(result.filePath)
     const messages = result.messages.map((message) => ({
