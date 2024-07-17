@@ -40,6 +40,7 @@
     "@emotion/react": "^11.11.4",
     "@kensho-technologies/prettier-config": "^3.0.0",
     "@kensho-technologies/tsconfig": "^5.0.0",
+    "@types/eslint": "^8.56.10",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "eslint": "^8.57.0",
