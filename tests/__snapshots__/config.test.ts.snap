@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`lints all fixtures: class.tsx 1`] = `
+exports[`lints all fixtures > class.tsx 1`] = `
 [
   {
     "column": 7,
@@ -12,7 +12,7 @@ exports[`lints all fixtures: class.tsx 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: component.js 1`] = `
+exports[`lints all fixtures > component.js 1`] = `
 [
   {
     "column": 7,
@@ -24,19 +24,9 @@ exports[`lints all fixtures: component.js 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: emotion.tsx 1`] = `
-[
-  {
-    "column": 1,
-    "line": 1,
-    "message": "'@emotion/react' should be listed in the project's dependencies, not devDependencies.",
-    "rule": "import/no-extraneous-dependencies",
-    "severity": 2,
-  },
-]
-`;
+exports[`lints all fixtures > emotion.tsx 1`] = `[]`;
 
-exports[`lints all fixtures: experimental.tsx 1`] = `
+exports[`lints all fixtures > experimental.tsx 1`] = `
 [
   {
     "column": 7,
@@ -55,19 +45,9 @@ exports[`lints all fixtures: experimental.tsx 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: functionComponent.tsx 1`] = `
-[
-  {
-    "column": 1,
-    "line": 1,
-    "message": "'react' should be listed in the project's dependencies, not devDependencies.",
-    "rule": "import/no-extraneous-dependencies",
-    "severity": 2,
-  },
-]
-`;
+exports[`lints all fixtures > functionComponent.tsx 1`] = `[]`;
 
-exports[`lints all fixtures: import.js 1`] = `
+exports[`lints all fixtures > import.js 1`] = `
 [
   {
     "column": 25,
@@ -93,7 +73,7 @@ exports[`lints all fixtures: import.js 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: import.ts 1`] = `
+exports[`lints all fixtures > import.ts 1`] = `
 [
   {
     "column": 27,
@@ -105,11 +85,11 @@ exports[`lints all fixtures: import.ts 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: import-ts-from-js.js 1`] = `[]`;
+exports[`lints all fixtures > import-ts-from-js.js 1`] = `[]`;
 
-exports[`lints all fixtures: js-exports.js 1`] = `[]`;
+exports[`lints all fixtures > js-exports.js 1`] = `[]`;
 
-exports[`lints all fixtures: jsdoc.ts 1`] = `
+exports[`lints all fixtures > jsdoc.ts 1`] = `
 [
   {
     "column": 10,
@@ -142,7 +122,7 @@ exports[`lints all fixtures: jsdoc.ts 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: prop-types.js 1`] = `
+exports[`lints all fixtures > prop-types.js 1`] = `
 [
   {
     "column": 5,
@@ -168,7 +148,7 @@ exports[`lints all fixtures: prop-types.js 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: prop-types.tsx 1`] = `
+exports[`lints all fixtures > prop-types.tsx 1`] = `
 [
   {
     "column": 16,
@@ -187,11 +167,11 @@ exports[`lints all fixtures: prop-types.tsx 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: syntax.tsx 1`] = `[]`;
+exports[`lints all fixtures > syntax.tsx 1`] = `[]`;
 
-exports[`lints all fixtures: ts-exports.ts 1`] = `[]`;
+exports[`lints all fixtures > ts-exports.ts 1`] = `[]`;
 
-exports[`lints all fixtures: variables.js 1`] = `
+exports[`lints all fixtures > variables.js 1`] = `
 [
   {
     "column": 24,
@@ -224,7 +204,7 @@ exports[`lints all fixtures: variables.js 1`] = `
 ]
 `;
 
-exports[`lints all fixtures: variables.ts 1`] = `
+exports[`lints all fixtures > variables.ts 1`] = `
 [
   {
     "column": 24,
