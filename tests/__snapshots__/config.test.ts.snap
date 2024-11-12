@@ -12,17 +12,7 @@ exports[`lints all fixtures > class.tsx 1`] = `
 ]
 `;
 
-exports[`lints all fixtures > component.js 1`] = `
-[
-  {
-    "column": 7,
-    "line": 72,
-    "message": "Prefer fragment shorthand over React.Fragment",
-    "rule": "react/jsx-fragments",
-    "severity": 2,
-  },
-]
-`;
+exports[`lints all fixtures > component.js 1`] = `[]`;
 
 exports[`lints all fixtures > experimental.tsx 1`] = `
 [
@@ -45,43 +35,9 @@ exports[`lints all fixtures > experimental.tsx 1`] = `
 
 exports[`lints all fixtures > functionComponent.tsx 1`] = `[]`;
 
-exports[`lints all fixtures > import.js 1`] = `
-[
-  {
-    "column": 25,
-    "line": 1,
-    "message": "baz not found in './js-exports'",
-    "rule": "import/named",
-    "severity": 2,
-  },
-  {
-    "column": 27,
-    "line": 2,
-    "message": "Missing file extension for "./nonexistent"",
-    "rule": "import/extensions",
-    "severity": 2,
-  },
-  {
-    "column": 27,
-    "line": 2,
-    "message": "Unable to resolve path to module './nonexistent'.",
-    "rule": "import/no-unresolved",
-    "severity": 2,
-  },
-]
-`;
+exports[`lints all fixtures > import.js 1`] = `[]`;
 
-exports[`lints all fixtures > import.ts 1`] = `
-[
-  {
-    "column": 27,
-    "line": 2,
-    "message": "Missing file extension for "./nonexistent"",
-    "rule": "import/extensions",
-    "severity": 2,
-  },
-]
-`;
+exports[`lints all fixtures > import.ts 1`] = `[]`;
 
 exports[`lints all fixtures > import-ts-from-js.js 1`] = `[]`;
 
@@ -129,8 +85,8 @@ exports[`lints all fixtures > variables.js 1`] = `
   {
     "column": 24,
     "line": 1,
-    "message": "Unexpected use of 'find'.",
-    "rule": "no-restricted-globals",
+    "message": "'find' is not defined.",
+    "rule": "no-undef",
     "severity": 2,
   },
   {
@@ -144,14 +100,7 @@ exports[`lints all fixtures > variables.js 1`] = `
     "column": 7,
     "line": 3,
     "message": "'unusedA' is assigned a value but never used.",
-    "rule": "no-unused-vars",
-    "severity": 2,
-  },
-  {
-    "column": 33,
-    "line": 6,
-    "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the \`=>\`.",
-    "rule": "arrow-body-style",
+    "rule": "@typescript-eslint/no-unused-vars",
     "severity": 2,
   },
 ]
@@ -160,13 +109,6 @@ exports[`lints all fixtures > variables.js 1`] = `
 exports[`lints all fixtures > variables.ts 1`] = `
 [
   {
-    "column": 24,
-    "line": 1,
-    "message": "Unexpected use of 'find'.",
-    "rule": "no-restricted-globals",
-    "severity": 2,
-  },
-  {
     "column": 7,
     "line": 3,
     "message": "'unusedA' is assigned a value but never used.",
@@ -174,31 +116,10 @@ exports[`lints all fixtures > variables.ts 1`] = `
     "severity": 2,
   },
   {
-    "column": 30,
-    "line": 6,
-    "message": "Missing return type on function.",
-    "rule": "@typescript-eslint/explicit-function-return-type",
-    "severity": 2,
-  },
-  {
-    "column": 33,
-    "line": 6,
-    "message": "Unexpected block statement surrounding arrow body; move the returned value immediately after the \`=>\`.",
-    "rule": "arrow-body-style",
-    "severity": 2,
-  },
-  {
     "column": 64,
     "line": 10,
     "message": "'c' is defined but never used.",
     "rule": "@typescript-eslint/no-unused-vars",
-    "severity": 2,
-  },
-  {
-    "column": 14,
-    "line": 16,
-    "message": "Variable name \`foo_encouraged\` must match one of the following formats: camelCase, UPPER_CASE, PascalCase",
-    "rule": "@typescript-eslint/naming-convention",
     "severity": 2,
   },
 ]
