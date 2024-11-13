@@ -37,7 +37,6 @@
     "eslint-config-prettier": "^9.1.0"
   },
   "devDependencies": {
-    "@emotion/react": "^11.11.4",
     "@kensho-technologies/prettier-config": "^3.0.0",
     "@kensho-technologies/tsconfig": "^5.0.0",
     "@types/eslint": "^8.56.10",

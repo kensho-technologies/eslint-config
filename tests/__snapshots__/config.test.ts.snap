@@ -24,8 +24,6 @@ exports[`lints all fixtures > component.js 1`] = `
 ]
 `;
 
-exports[`lints all fixtures > emotion.tsx 1`] = `[]`;
-
 exports[`lints all fixtures > experimental.tsx 1`] = `
 [
   {
