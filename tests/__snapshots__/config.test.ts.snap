@@ -120,51 +120,6 @@ exports[`lints all fixtures > jsdoc.ts 1`] = `
 ]
 `;
 
-exports[`lints all fixtures > prop-types.js 1`] = `
-[
-  {
-    "column": 5,
-    "line": 9,
-    "message": "'propWithoutPropType' is missing in props validation",
-    "rule": "react/prop-types",
-    "severity": 2,
-  },
-  {
-    "column": 3,
-    "line": 27,
-    "message": "'unusedProp' PropType is defined but prop is never used",
-    "rule": "react/no-unused-prop-types",
-    "severity": 2,
-  },
-  {
-    "column": 3,
-    "line": 32,
-    "message": "defaultProp "requiredPropWithDefault" defined for isRequired propType.",
-    "rule": "react/default-props-match-prop-types",
-    "severity": 2,
-  },
-]
-`;
-
-exports[`lints all fixtures > prop-types.tsx 1`] = `
-[
-  {
-    "column": 16,
-    "line": 3,
-    "message": "Missing return type on function.",
-    "rule": "@typescript-eslint/explicit-function-return-type",
-    "severity": 2,
-  },
-  {
-    "column": 3,
-    "line": 32,
-    "message": "defaultProp "requiredPropWithDefault" defined for isRequired propType.",
-    "rule": "react/default-props-match-prop-types",
-    "severity": 2,
-  },
-]
-`;
-
 exports[`lints all fixtures > syntax.tsx 1`] = `[]`;
 
 exports[`lints all fixtures > ts-exports.ts 1`] = `[]`;
