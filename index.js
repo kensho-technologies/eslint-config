@@ -1,11 +1,11 @@
 import js from '@eslint/js'
-import tseslint from 'typescript-eslint'
+import ts from 'typescript-eslint'
 import prettier from 'eslint-config-prettier'
 import reactHooks from 'eslint-plugin-react-hooks'
 
-const configs = tseslint.config(
+export default ts.config(
   js.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...ts.configs.recommended,
   {
     plugins: {
       'react-hooks': reactHooks,
@@ -18,5 +18,3 @@ const configs = tseslint.config(
   },
   prettier,
 )
-
-export default configs
