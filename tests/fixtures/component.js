@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types' // eslint-disable-line
-import {Component, Fragment} from 'react' // eslint-disable-line
+import PropTypes from 'prop-types'
+import {Component, Fragment} from 'react'
 
 export default class MyComponent extends Component {
   static propTypes = {
