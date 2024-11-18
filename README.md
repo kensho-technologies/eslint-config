@@ -1,7 +1,6 @@
 # eslint-config
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/kensho-technologies/eslint-config/ci.yml?branch=main)](https://github.com/kensho-technologies/eslint-config/actions)
-[![npm](https://img.shields.io/npm/v/@kensho-technologies/eslint-config.svg)](https://npm.im/@kensho-technologies/eslint-config)
+Standard ESLint config shared across Kensho projects.
 
 ## Install
 
@@ -11,12 +10,12 @@ $ npm i -D eslint typescript @kensho-technologies/eslint-config
 
 ## Usage
 
-Add an [**ESLint config**](http://eslint.org/docs/user-guide/configuring) that extends the config to a project, e.g.:
+Add an [**ESLint configuration file**](https://eslint.org/docs/latest/use/configure/configuration-files) that includes the Kensho config:
 
-```json
-{
-  "extends": "@kensho-technologies/eslint-config"
-}
+```js
+import configs from '@kensho-technologies/eslint-config'
+
+export default [...configs]
 ```
 
 Add scripts in **package.json** to [run the linter](http://eslint.org/docs/user-guide/command-line-interface), e.g.:
