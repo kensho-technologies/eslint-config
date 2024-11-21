@@ -76,6 +76,18 @@ exports[`lints all fixtures > jsdoc.ts 1`] = `
 ]
 `;
 
+exports[`lints all fixtures > react-query.tsx 1`] = `
+[
+  {
+    "column": 5,
+    "line": 9,
+    "message": "The following dependencies are missing in your queryKey: userId",
+    "rule": "@tanstack/query/exhaustive-deps",
+    "severity": 2,
+  },
+]
+`;
+
 exports[`lints all fixtures > syntax.tsx 1`] = `[]`;
 
 exports[`lints all fixtures > ts-exports.ts 1`] = `[]`;
