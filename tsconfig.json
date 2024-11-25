@@ -1,6 +1,6 @@
 {
   "extends": "@kensho-technologies/tsconfig",
-  "include": ["tests"],
+  "include": ["tests", "*"],
   "exclude": ["tests/fixtures"],
   "compilerOptions": {
     "noEmit": true,
