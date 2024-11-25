@@ -27,23 +27,23 @@
   },
   "prettier": "@kensho-technologies/prettier-config",
   "peerDependencies": {
-    "eslint": "^9.14.0"
+    "eslint": "^9.15.0"
   },
   "dependencies": {
-    "@eslint/js": "^9.14.0",
+    "@eslint/js": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "typescript-eslint": "^8.14.0"
+    "typescript-eslint": "^8.16.0"
   },
   "devDependencies": {
     "@kensho-technologies/prettier-config": "^3.0.0",
     "@kensho-technologies/tsconfig": "^5.0.0",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^20.17.6",
+    "@types/node": "^20.17.7",
     "@types/react": "^18.3.12",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
-    "typescript": "~5.6.3",
+    "typescript": "~5.7.2",
     "vitest": "^2.1.5"
   }
 }
