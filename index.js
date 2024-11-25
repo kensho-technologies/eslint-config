@@ -1,6 +1,7 @@
 import js from '@eslint/js'
 import ts from 'typescript-eslint'
 import prettier from 'eslint-config-prettier'
+import react from '@eslint-react/eslint-plugin'
 import query from '@tanstack/eslint-plugin-query'
 import reactHooks from 'eslint-plugin-react-hooks'
 
@@ -8,6 +9,10 @@ export default ts.config(
   js.configs.recommended,
   ...ts.configs.recommended,
   ...query.configs['flat/recommended'],
+  {
+    files: ['**/*.{ts,tsx}'],
+    ...react.configs.recommended,
+  },
   {
     plugins: {
       'react-hooks': reactHooks,
