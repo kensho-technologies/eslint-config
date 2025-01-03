@@ -1,7 +1,7 @@
 import path from 'node:path'
 
-import {test, expect} from 'vitest'
 import {ESLint} from 'eslint'
+import {expect, test} from 'vitest'
 
 test('lints all fixtures', async () => {
   const eslint = new ESLint({ignore: false})

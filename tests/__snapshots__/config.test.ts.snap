@@ -14,6 +14,8 @@ exports[`lints all fixtures > class.tsx 1`] = `
 
 exports[`lints all fixtures > component.js 1`] = `[]`;
 
+exports[`lints all fixtures > component.tsx 1`] = `[]`;
+
 exports[`lints all fixtures > experimental.tsx 1`] = `
 [
   {
@@ -32,16 +34,6 @@ exports[`lints all fixtures > experimental.tsx 1`] = `
   },
 ]
 `;
-
-exports[`lints all fixtures > functionComponent.tsx 1`] = `[]`;
-
-exports[`lints all fixtures > import.js 1`] = `[]`;
-
-exports[`lints all fixtures > import.ts 1`] = `[]`;
-
-exports[`lints all fixtures > import-ts-from-js.js 1`] = `[]`;
-
-exports[`lints all fixtures > js-exports.js 1`] = `[]`;
 
 exports[`lints all fixtures > jsdoc.ts 1`] = `
 [
@@ -88,9 +80,9 @@ exports[`lints all fixtures > react-query.tsx 1`] = `
 ]
 `;
 
-exports[`lints all fixtures > syntax.tsx 1`] = `[]`;
+exports[`lints all fixtures > sorted-imports.tsx 1`] = `[]`;
 
-exports[`lints all fixtures > ts-exports.ts 1`] = `[]`;
+exports[`lints all fixtures > syntax.tsx 1`] = `[]`;
 
 exports[`lints all fixtures > variables.js 1`] = `
 [
