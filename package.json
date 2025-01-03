@@ -1,6 +1,6 @@
 {
   "name": "@kensho-technologies/eslint-config",
-  "version": "29.0.0",
+  "version": "30.0.0",
   "type": "module",
   "description": "Standard ESLint config shared across Kensho projects.",
   "publishConfig": {
