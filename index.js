@@ -9,6 +9,7 @@ export default ts.config(
   js.configs.recommended,
   ...ts.configs.recommended,
   ...query.configs['flat/recommended'],
+  ...reactHooks.configs['recommended-latest'],
   {
     plugins: {
       'simple-import-sort': simpleImportSort,
@@ -18,9 +19,6 @@ export default ts.config(
     },
   },
   {
-    plugins: {
-      'react-hooks': reactHooks,
-    },
     rules: {
       '@typescript-eslint/no-unused-vars': ['error', {ignoreRestSiblings: true}],
       'react-hooks/exhaustive-deps': 'error',
