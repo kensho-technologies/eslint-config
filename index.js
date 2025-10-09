@@ -10,7 +10,7 @@ export default defineConfig(
   js.configs.recommended,
   ts.configs.recommended,
   query.configs['flat/recommended'],
-  reactHooks.configs['recommended-latest'],
+  reactHooks.configs.flat['recommended-latest'],
   {
     plugins: {
       'simple-import-sort': simpleImportSort,
