@@ -1,15 +1,16 @@
 import js from '@eslint/js'
 import query from '@tanstack/eslint-plugin-query'
+import {defineConfig} from 'eslint/config'
 import prettier from 'eslint-config-prettier'
 import reactHooks from 'eslint-plugin-react-hooks'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 import ts from 'typescript-eslint'
 
-export default ts.config(
+export default defineConfig(
   js.configs.recommended,
-  ...ts.configs.recommended,
-  ...query.configs['flat/recommended'],
-  ...reactHooks.configs['recommended-latest'],
+  ts.configs.recommended,
+  query.configs['flat/recommended'],
+  reactHooks.configs['recommended-latest'],
   {
     plugins: {
       'simple-import-sort': simpleImportSort,
